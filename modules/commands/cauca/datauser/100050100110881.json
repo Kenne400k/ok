@@ -1,0 +1,29 @@
+{
+  "name": "Trần Hà Thanh Ngân",
+  "ID": "100050100110881",
+  "mainROD": "Ion Powered Trident",
+  "GPS": {
+    "locate": "Sector Zero",
+    "area": "World Edge – The Void"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    }
+  ],
+  "item": [
+    {
+      "name": "Ion Powered Trident",
+      "price": 57000,
+      "durability": 1970,
+      "countdown": 15,
+      "countdownData": 1690634988634,
+      "image": "https://i.imgur.com/W5dAfCn.jpg"
+    }
+  ],
+  "timeRegister": "13:22:53, 29/7/2023"
+}

@@ -1,0 +1,117 @@
+{
+  "name": "Đỗ Tường Vân",
+  "ID": "100072281812096",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Lost River"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 2,
+      "name": "Mesmer",
+      "category": "Rare",
+      "size": 67,
+      "sell": 990,
+      "image": "https://i.imgur.com/UUfnPCp.png"
+    },
+    {
+      "ID": 3,
+      "name": "Ghostray",
+      "category": "Uncommon",
+      "size": 250,
+      "sell": 990,
+      "image": "https://i.imgur.com/UC5HJWw.png"
+    },
+    {
+      "ID": 4,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 5,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 6,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 7,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 8,
+      "name": "Spinefish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/inXivDO.jpg"
+    },
+    {
+      "ID": 9,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 10,
+      "name": "Mesmer",
+      "category": "Rare",
+      "size": 67,
+      "sell": 990,
+      "image": "https://i.imgur.com/UUfnPCp.png"
+    },
+    {
+      "ID": 11,
+      "name": "Ghostray",
+      "category": "Uncommon",
+      "size": 250,
+      "sell": 990,
+      "image": "https://i.imgur.com/UC5HJWw.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 59890,
+      "countdown": 5,
+      "countdownData": 1691072163942,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "13:48:03, 31/7/2023"
+}

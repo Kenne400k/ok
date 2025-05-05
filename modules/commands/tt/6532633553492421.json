@@ -1,0 +1,65 @@
+{
+    "total": [
+        {
+            "id": "100000230609068",
+            "count": 0
+        },
+        {
+            "id": "100069464706566",
+            "count": 0
+        },
+        {
+            "id": "100070827925578",
+            "count": 0
+        },
+        {
+            "id": "100083897637232",
+            "count": 1
+        }
+    ],
+    "week": [
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        },
+        {
+            "id": "100069464706566",
+            "count": 0,
+            "name": "Nguyễn Việt Nhật"
+        },
+        {
+            "id": "100070827925578",
+            "count": 0,
+            "name": "May Mắn"
+        },
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        }
+    ],
+    "day": [
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        },
+        {
+            "id": "100069464706566",
+            "count": 0,
+            "name": "Nguyễn Việt Nhật"
+        },
+        {
+            "id": "100070827925578",
+            "count": 0,
+            "name": "May Mắn"
+        },
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        }
+    ],
+    "time": 6
+}

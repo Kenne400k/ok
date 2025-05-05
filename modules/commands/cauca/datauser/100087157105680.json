@@ -1,0 +1,37 @@
+{
+  "name": "Duy Thanh",
+  "ID": "100087157105680",
+  "mainROD": "Steel Harpoon",
+  "GPS": {
+    "locate": "Sector Zero",
+    "area": "Arctic Kelp Forest"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Pengling",
+      "category": "Uncommon",
+      "size": 63,
+      "sell": 650,
+      "image": "https://i.imgur.com/Qy0kJT5.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "Steel Harpoon",
+      "price": 1500,
+      "durability": 40,
+      "countdown": 180,
+      "countdownData": 1690634812097,
+      "image": "https://i.imgur.com/mptiizn.png"
+    }
+  ],
+  "timeRegister": "13:22:29, 29/7/2023"
+}

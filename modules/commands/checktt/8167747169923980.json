@@ -1,0 +1,135 @@
+{
+    "total": [
+        {
+            "id": "61553833886374",
+            "count": 213
+        },
+        {
+            "id": "61556532832835",
+            "count": 151
+        },
+        {
+            "id": "61560450915670",
+            "count": 0
+        },
+        {
+            "id": "100007211352792",
+            "count": 344
+        },
+        {
+            "id": "100086856549775",
+            "count": 58
+        },
+        {
+            "id": "100087999784463",
+            "count": 131
+        },
+        {
+            "id": "100093051642489",
+            "count": 14
+        },
+        {
+            "id": "100094760444007",
+            "count": 137
+        },
+        {
+            "id": "100090258154458",
+            "count": 119
+        }
+    ],
+    "week": [
+        {
+            "id": "61553833886374",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61556532832835",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61560450915670",
+            "count": 0,
+            "name": "ᏮᏮᏮ ᏮᏮᏮ"
+        },
+        {
+            "id": "100007211352792",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086856549775",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087999784463",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100093051642489",
+            "count": 0,
+            "name": "Đỗ Hải Phong"
+        },
+        {
+            "id": "100094760444007",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100090258154458",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "day": [
+        {
+            "id": "61553833886374",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61556532832835",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61560450915670",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100007211352792",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086856549775",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087999784463",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100093051642489",
+            "count": 0,
+            "name": "Đỗ Hải Phong ToT"
+        },
+        {
+            "id": "100094760444007",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100090258154458",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 6
+}

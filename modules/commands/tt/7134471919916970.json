@@ -1,0 +1,163 @@
+{
+    "total": [
+        {
+            "id": "61550852627066",
+            "count": 0
+        },
+        {
+            "id": "100000230609068",
+            "count": 320
+        },
+        {
+            "id": "100024106396615",
+            "count": 562
+        },
+        {
+            "id": "100048396701935",
+            "count": 800
+        },
+        {
+            "id": "100073090654809",
+            "count": 982
+        },
+        {
+            "id": "100075177671486",
+            "count": 520
+        },
+        {
+            "id": "100078146598147",
+            "count": 1608
+        },
+        {
+            "id": "100082343244957",
+            "count": 1388
+        },
+        {
+            "id": "100083897637232",
+            "count": 76
+        },
+        {
+            "id": "100095360205100",
+            "count": 0
+        },
+        {
+            "id": "100059897080117",
+            "count": 26
+        }
+    ],
+    "week": [
+        {
+            "id": "61550852627066",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        },
+        {
+            "id": "100024106396615",
+            "count": 0,
+            "name": "Quynh Anh Ton"
+        },
+        {
+            "id": "100048396701935",
+            "count": 0,
+            "name": "Ng Thành Nam"
+        },
+        {
+            "id": "100073090654809",
+            "count": 0,
+            "name": "Dw Thah Thao"
+        },
+        {
+            "id": "100075177671486",
+            "count": 0,
+            "name": "Thùy Nguyễn"
+        },
+        {
+            "id": "100078146598147",
+            "count": 0,
+            "name": "Ngoc Thien"
+        },
+        {
+            "id": "100082343244957",
+            "count": 0,
+            "name": "Ng Thắm"
+        },
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        },
+        {
+            "id": "100095360205100",
+            "count": 0,
+            "name": "Ng Hoang Khanh Vy"
+        },
+        {
+            "id": "100059897080117",
+            "count": 0,
+            "name": "Lê Văn Thái"
+        }
+    ],
+    "day": [
+        {
+            "id": "61550852627066",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        },
+        {
+            "id": "100024106396615",
+            "count": 0,
+            "name": "Quynh Anh Ton"
+        },
+        {
+            "id": "100048396701935",
+            "count": 0,
+            "name": "Ng Thành Nam"
+        },
+        {
+            "id": "100073090654809",
+            "count": 0,
+            "name": "Dw Thah Thao"
+        },
+        {
+            "id": "100075177671486",
+            "count": 0,
+            "name": "Thùy Nguyễn"
+        },
+        {
+            "id": "100078146598147",
+            "count": 0,
+            "name": "Ngoc Thien"
+        },
+        {
+            "id": "100082343244957",
+            "count": 0,
+            "name": "Ng Thắm"
+        },
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        },
+        {
+            "id": "100095360205100",
+            "count": 0,
+            "name": "Ng Hoang Khanh Vy"
+        },
+        {
+            "id": "100059897080117",
+            "count": 0,
+            "name": "Lê Văn Thái"
+        }
+    ],
+    "time": 6
+}

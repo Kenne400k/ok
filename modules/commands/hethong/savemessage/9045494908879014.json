@@ -1,0 +1,680 @@
+{
+    "100088165039165": [
+        {
+            "type": "message",
+            "name": "Trịnh Hơn",
+            "message": "Ngủ quênnn",
+            "time": "14/02/2025 07:43:54",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Trịnh Hơn",
+            "message": "Nghi hoc nx",
+            "time": "14/02/2025 07:44:01",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Trịnh Hơn",
+            "message": "Đr",
+            "time": "14/02/2025 10:12:24",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Trịnh Hơn",
+            "message": "",
+            "time": "14/02/2025 10:35:45",
+            "attachment": [
+                {
+                    "type": "share",
+                    "ID": "ee.mid.$gACAi1GbcgKabM8wfVWVAobVU2jt-",
+                    "url": "https://www.facebook.com/phongkhamchuyenkhoahoisinhkhoaicam.uni/videos/1547846809185252/?vh=e&extid=MSG-UNK-UNK-UNK-UNK_GK0T-GK1C",
+                    "title": "Phòng Khám Chuyên Khoa Hồi Sinh Khoái Cảm UNI - Sài Gòn ",
+                    "description": "Facebook",
+                    "source": "",
+                    "image": "https://scontent.xx.fbcdn.net/v/t15.5256-10/465758420_1547846822518584_3212051832361092993_n.jpg?stp=c0.0.1350.1350c_cmp128_dst-jpg_fi1-000000-1.00_s600x1066_tt6&_nc_cat=110&ccb=1-7&_nc_sid=487f02&_nc_ohc=5M9B-5fBFDsQ7kNvgHZGfEn&_nc_oc=Adi77FoIKMU_3YnCK0ItvrIKIQb9_ciU8yISX4UlO7SupWAkBhIUtUh30_xXIMWZKcc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AEVHjcZmwBZ9PpYDLG0ShX9&oh=00_AYBhPz3nMnUPQ2Rk0xCwvv0iRBsRhcbPiUP58GsSDR5WnQ&oe=67B47F2F",
+                    "width": 200,
+                    "height": 200,
+                    "playable": false,
+                    "duration": 0,
+                    "playableUrl": "https://thrift.facebook.com/",
+                    "subattachments": [],
+                    "properties": {},
+                    "facebookUrl": "https://www.facebook.com/phongkhamchuyenkhoahoisinhkhoaicam.uni/videos/1547846809185252/?vh=e&extid=MSG-UNK-UNK-UNK-UNK_GK0T-GK1C",
+                    "target": {
+                        "__typename": "ExternalUrl",
+                        "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL3d3dy5mYWNlYm9vay5jb20vcGhvbmdraGFtY2h1eWVua2hvYWhvaXNpbmhraG9haWNhbS51bmkvdmlkZW9zLzE1NDc4NDY4MDkxODUyNTIvP3ZoPWUmZXh0aWQ9TVNHLVVOSy1VTkstVU5LLVVOS1xiR0swVC1HSzFDOjo6Og=="
+                    },
+                    "styleList": [
+                        "messenger_generic_template",
+                        "share",
+                        "fallback"
+                    ]
+                }
+            ]
+        }
+    ],
+    "100026127272987": [
+        {
+            "type": "message",
+            "name": "ヴォ・ティ・ ホン・ハン",
+            "message": "Nói là cái mền skinship mạnh quá",
+            "time": "14/02/2025 07:48:39",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "ヴォ・ティ・ ホン・ハン",
+            "message": "Thg nào fi5 ko",
+            "time": "14/02/2025 11:21:10",
+            "attachment": []
+        }
+    ],
+    "61569106263145": [
+        {
+            "type": "message",
+            "name": "Bloxkid Trùm",
+            "message": "🐧",
+            "time": "14/02/2025 07:48:44",
+            "attachment": []
+        }
+    ],
+    "100088074404658": [
+        {
+            "type": "message",
+            "name": "V Anh Tran",
+            "message": "🐧",
+            "time": "14/02/2025 08:17:24",
+            "attachment": []
+        }
+    ],
+    "61551303337396": [
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "🐧",
+            "time": "14/02/2025 10:11:18",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "Yêu em @vợ của Ausuna",
+            "time": "14/02/2025 10:11:25",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "J",
+            "time": "14/02/2025 10:13:59",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "🐧",
+            "time": "14/02/2025 10:14:46",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "Phúc bịp",
+            "time": "14/02/2025 10:14:50",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "Còn 9 ngón",
+            "time": "14/02/2025 10:14:57",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Nguyễn Hoàng Khang",
+            "message": "Kêu my sói làm đi 🐧",
+            "time": "14/02/2025 10:18:25",
+            "attachment": []
+        }
+    ],
+    "61550752603315": [
+        {
+            "type": "message_reply",
+            "name": "Hồng Phúc",
+            "message": "🐧",
+            "time": "14/02/2025 10:13:49",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "🐧",
+            "time": "14/02/2025 10:13:49",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "",
+            "time": "14/02/2025 10:14:30",
+            "attachment": [
+                {
+                    "type": "audio",
+                    "filename": "audioclip-1739502869000-4156.mp4",
+                    "ID": "AT1KyzrfzMv-ahIl6De3Ra01JEjZ4FPT84uqGTZ2rAGTZ1mwCU8i85HeP52Rnt1oLwEEa-iwPpXjFXCr7OxOgmpm3kA-KrK1zomnBxI9wa6qMEulA8f9FLXlSHLkc82WNDJ_N8QSjDyuSiXCUJsHaq2t6ao",
+                    "audioType": "VOICE_MESSAGE",
+                    "duration": 4156,
+                    "url": "https://cdn.fbsbx.com/v/t59.3654-21/476776229_1002014658441358_1197239668299974387_n.mp4/audioclip-1739502869000-4156.mp4?_nc_cat=109&ccb=1-7&_nc_sid=d61c36&_nc_ohc=s2OKSn0wIpAQ7kNvgEjpY9Z&_nc_oc=AdhHPeTtsNo-ATd-6ZExjuSGU64G4DX5f4rCaIbtbnYinfZzL2-OZa06eeVA4b4Zeuo&_nc_zt=28&_nc_ht=cdn.fbsbx.com&_nc_gid=ALR6wUwBOOkbqYPlFGZuVDs&oh=03_Q7cD1gGYw6ljN_Ey0C0GT0Ztkl6TAWc24Cj1hwgRikzWVfA1-w&oe=67B07ABA&dl=1",
+                    "isVoiceMail": false
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Vps khó làm lắm",
+            "time": "14/02/2025 10:16:23",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "",
+            "time": "14/02/2025 10:16:30",
+            "attachment": [
+                {
+                    "type": "audio",
+                    "filename": "audioclip-1739502989000-3785.mp4",
+                    "ID": "AT3OrQcOLhVeiE35wnx57JucaLN9wuAFHdZfyI7njhAO5_upxD7mXyAwf4gM48Y2dYSBazvU8jPnIXzuGEuW39ytVymR6yQ7-4dWZ87d3hu09yk_Lq_GKKWrYde3weHWrt1eIj_OaCj0dUEJllGs_lNRhzU",
+                    "audioType": "VOICE_MESSAGE",
+                    "duration": 3785,
+                    "url": "https://cdn.fbsbx.com/v/t59.3654-21/476801684_1198083348984127_4023704502889176144_n.mp4/audioclip-1739502989000-3785.mp4?_nc_cat=104&ccb=1-7&_nc_sid=d61c36&_nc_ohc=Ui3HeKnayE0Q7kNvgGW27zx&_nc_oc=AdjpnTMZLATsTrqvWg_DLMNClrmmWYGHCaYcNolfg6Q4Kq-cdz0V-wWDkWAbpnhpzJ0&_nc_zt=28&_nc_ht=cdn.fbsbx.com&_nc_gid=AvbJwLg6VFJONSbufIuJrKJ&oh=03_Q7cD1gENifzL-uSgg2fmGWb_iW7XjNR1d9looPfebeRDdhbeuQ&oe=67B0A429&dl=1",
+                    "isVoiceMail": false
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Làm như dễ à",
+            "time": "14/02/2025 10:16:33",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Đó là nguyên cái pc",
+            "time": "14/02/2025 10:16:42",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Chứ đâu phải là host lỏ bth",
+            "time": "14/02/2025 10:16:50",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Hồng Phúc",
+            "message": "My sói làm dc t đi đầu cu :v",
+            "time": "14/02/2025 10:19:16",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Vps khó hơn host",
+            "time": "14/02/2025 10:19:23",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Phải mò từng cái :v",
+            "time": "14/02/2025 10:19:32",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Nhưng làm xong nó sẽ ngon hơn host",
+            "time": "14/02/2025 10:20:02",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Vì nó là nguyên cái pc:)",
+            "time": "14/02/2025 10:20:08",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Nam nắng lòi lồn",
+            "time": "14/02/2025 10:22:29",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Hồng Phúc",
+            "message": "Dạ nhà em 2 cái máy lạnh vẫn nóng ạ🤡",
+            "time": "14/02/2025 10:24:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Dạ nhà em 2 lầu ạ 🤡",
+            "time": "14/02/2025 10:25:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Nằm ở phường 3 ạ",
+            "time": "14/02/2025 10:25:11",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "🐧",
+            "time": "14/02/2025 10:25:37",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Hồng Phúc",
+            "message": "t còn k tải phải phải:)",
+            "time": "14/02/2025 10:30:28",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "🐧",
+            "time": "14/02/2025 10:52:59",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Lồnb",
+            "time": "14/02/2025 11:03:35",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Đang làm nhe VV",
+            "time": "14/02/2025 11:09:56",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Đéo :))",
+            "time": "14/02/2025 11:14:19",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "T làm 1 phần",
+            "time": "14/02/2025 11:14:29",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "Còn lại để đức làm",
+            "time": "14/02/2025 11:14:41",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "T k biết làm mấy đó :)))",
+            "time": "14/02/2025 11:14:46",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồng Phúc",
+            "message": "",
+            "time": "14/02/2025 11:22:12",
+            "attachment": [
+                {
+                    "type": "audio",
+                    "filename": "audioclip-1739506932000-2368.mp4",
+                    "ID": "AT3-GOvjR_moeXXfHs6rqQgNxLTcqPt9ok-hafgdzHv1h5iW8gmaX1mvLqIh4_ZuoIYySNgD0O7KiUgQmNlkHq2l0ot8fgTZ2TuvAYJ0w9JByPak9lbaODUy16WtuAgkc9u2m9VHO_aZEkLG1wSB48cyD74",
+                    "audioType": "VOICE_MESSAGE",
+                    "duration": 2368,
+                    "url": "https://cdn.fbsbx.com/v/t59.3654-21/477142154_1301549724405293_5217800952186551333_n.mp4/audioclip-1739506932000-2368.mp4?_nc_cat=105&ccb=1-7&_nc_sid=d61c36&_nc_ohc=AVbd1-7SqjEQ7kNvgEh9TCk&_nc_oc=Adhy-AZNO6PZUZbQzA5gpF1IqHzKhNNA9zguYud-e5suQOHP20wrjkeHaDR_6U1lZyc&_nc_zt=28&_nc_ht=cdn.fbsbx.com&_nc_gid=ASMI5L2-D08PSqiuwV44zkx&oh=03_Q7cD1gEWLRFYYSEx0zYQABj6JS2Fs9Pa6hKMIzg7ynfrNjtw1g&oe=67B09869&dl=1",
+                    "isVoiceMail": false
+                }
+            ]
+        }
+    ],
+    "100088676550659": [
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "ip sever",
+            "time": "14/02/2025 10:14:00",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "ip server chính đâu",
+            "time": "14/02/2025 10:16:07",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "đùa bố m à",
+            "time": "14/02/2025 10:16:11",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "bủh",
+            "time": "14/02/2025 10:16:32",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "nhanh lên dmm",
+            "time": "14/02/2025 10:16:45",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "chờ lâu quá",
+            "time": "14/02/2025 10:16:50",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "cố đi",
+            "time": "14/02/2025 10:16:52",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "mmbbbbbbbb",
+            "time": "14/02/2025 10:16:54",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hải Phongg",
+            "message": "bot ngu",
+            "time": "14/02/2025 10:17:25",
+            "attachment": []
+        }
+    ],
+    "61564939499282": [
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Thế có sv chưa",
+            "time": "14/02/2025 10:14:09",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Ô",
+            "time": "14/02/2025 10:14:44",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "",
+            "time": "14/02/2025 10:16:29",
+            "attachment": [
+                {
+                    "type": "photo",
+                    "ID": "1351020622592264",
+                    "filename": "image-1351020622592264",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?stp=cp0_dst-jpg_p34x34_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHvSLR-La0sPG-vSKU7IZkdqjJKhFn9cMt9Dfmlt92ntg&oe=67D620DF",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "previewWidth": 299,
+                    "previewHeight": 168,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "largePreviewWidth": 299,
+                    "largePreviewHeight": 168,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "width": 299,
+                    "height": 168,
+                    "name": "image-1351020622592264"
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Thế may giờ xong",
+            "time": "14/02/2025 10:18:43",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Lê Hữu Tính",
+            "message": "",
+            "time": "14/02/2025 10:19:39",
+            "attachment": [
+                {
+                    "type": "photo",
+                    "ID": "1344106379948614",
+                    "filename": "image-1344106379948614",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?stp=cp0_dst-jpg_p34x34_tt6&_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHvSLR-La0sPG-vSKU7IZkdqjJKhFn9cMt9Dfmlt92ntg&oe=67D620DF",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "previewWidth": 299,
+                    "previewHeight": 168,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "largePreviewWidth": 299,
+                    "largePreviewHeight": 168,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/462516416_840511498235618_842094739234009852_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=a1Kby4dZ_qEQ7kNvgHHPhr3&_nc_oc=AdjCYNv0xB4D8Ntvcfn2Nx88NfyJC7zauOm9_V6bE0jLBjG4HawgoAgtZN6FevQweKQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH15PxpuWQjprKY0bh2rRt8veAk0muhj5WRVGkGs8ap4g&oe=67D620DF",
+                    "width": 299,
+                    "height": 168,
+                    "name": "image-1344106379948614"
+                }
+            ]
+        },
+        {
+            "type": "message_reply",
+            "name": "Lê Hữu Tính",
+            "message": "Kệ bắc",
+            "time": "14/02/2025 10:22:15",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Ai bảo ra ngoài",
+            "time": "14/02/2025 10:22:54",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Ai bảo vứt nóc nhà",
+            "time": "14/02/2025 10:24:20",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Biết sao hết nóng ko",
+            "time": "14/02/2025 10:25:24",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Muốn hết nóng ý",
+            "time": "14/02/2025 10:25:52",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Lê Hữu Tính",
+            "message": "Phải xóa phai phai",
+            "time": "14/02/2025 10:25:57",
+            "attachment": []
+        }
+    ],
+    "100091943471153": [
+        {
+            "type": "message",
+            "name": "Quoc Anh",
+            "message": "Hi",
+            "time": "14/02/2025 10:17:17",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Quoc Anh",
+            "message": "Miền Bắc bị dịch cúm",
+            "time": "14/02/2025 10:21:46",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Quoc Anh",
+            "message": "🐧",
+            "time": "14/02/2025 10:21:49",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Quoc Anh",
+            "message": "🐧",
+            "time": "14/02/2025 11:16:28",
+            "attachment": []
+        }
+    ],
+    "100000895922054": [
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "🐧",
+            "time": "14/02/2025 10:29:53",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "🐧",
+            "time": "14/02/2025 11:26:44",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "m lại chạy acc này à",
+            "time": "14/02/2025 11:27:10",
+            "attachment": []
+        }
+    ],
+    "61573147222924": [
+        {
+            "type": "message",
+            "name": "Dac Di",
+            "message": "====「 SmartBot HoDacDi  」====\n» Prefix hệ thống: .\n» Prefix box: .\n» Modules: 259\n» Ping: 78ms\n──────────────\n======「 ADMIN 」 ======\n1/ Hồ Đắc Di - 61559447971396\n──────────────\nBot has been working for 0 hour(s) 0 minute(s) 19 second(s)\n\n» Total users: 252 \n» Total threads: 4\n──────────────\n[Bạn có biết?]: Cút.",
+            "time": "14/02/2025 11:01:19",
+            "attachment": [
+                {
+                    "type": "photo",
+                    "ID": "1171875944569598",
+                    "filename": "image-1171875944569598",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/385534366_6433066216798992_5137389114685559713_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nPOL_rt_fPgQ7kNvgH6MhD6&_nc_oc=AdjEoRbeMNzmwTJJXhxOKHnFp2nGQv0Ja_pRw28faoxNyYYYo8pO2E78XUW5wpAyrKY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGUM0Edhvnrb5yu4SW6glPtogfURnOo2rvIqwN9_JbMMQ&oe=67D63D4D",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/385534366_6433066216798992_5137389114685559713_n.jpg?stp=dst-jpg_p280x280_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nPOL_rt_fPgQ7kNvgH6MhD6&_nc_oc=AdjEoRbeMNzmwTJJXhxOKHnFp2nGQv0Ja_pRw28faoxNyYYYo8pO2E78XUW5wpAyrKY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHYrYfYkdEq-WoNLt4cK65iCLZD8mGPZg-LVXEymg5n4w&oe=67D63D4D",
+                    "previewWidth": 280,
+                    "previewHeight": 530,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/385534366_6433066216798992_5137389114685559713_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nPOL_rt_fPgQ7kNvgH6MhD6&_nc_oc=AdjEoRbeMNzmwTJJXhxOKHnFp2nGQv0Ja_pRw28faoxNyYYYo8pO2E78XUW5wpAyrKY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHuRwLwTtignvPhtjskb3QhCQU-ZCeqMjrWv07jBG7kTw&oe=67D63D4D",
+                    "largePreviewWidth": 480,
+                    "largePreviewHeight": 908,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/385534366_6433066216798992_5137389114685559713_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nPOL_rt_fPgQ7kNvgH6MhD6&_nc_oc=AdjEoRbeMNzmwTJJXhxOKHnFp2nGQv0Ja_pRw28faoxNyYYYo8pO2E78XUW5wpAyrKY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHuRwLwTtignvPhtjskb3QhCQU-ZCeqMjrWv07jBG7kTw&oe=67D63D4D",
+                    "width": 564,
+                    "height": 1067,
+                    "name": "image-1171875944569598"
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Dac Di",
+            "message": "[ Kiểm Tra Tin nhắn Tổng ]\n────────────────\n1. Hồ Đắc Di với 50 tin nhắn \n2. Minh  Đức 󱢏 với 30 tin nhắn \n3. Dac Di với 28 tin nhắn \n4. Hồng Phúc với 25 tin nhắn \n5. Hải Phongg với 20 tin nhắn \n6. Trịnh Hơn với 18 tin nhắn \n7. Lê Hữu Tính với 16 tin nhắn \n8. Quoc Anh với 14 tin nhắn \n9. ヴォ・ティ・ ホン・ハン với 4 tin nhắn \n10. Cuòng Hùng với 2 tin nhắn \n11. Di Dac với 1 tin nhắn \n12. Bloxkid Trùm với 0 tin nhắn \n13. Đức Kiêt với 0 tin nhắn \n14. Hoài An với 0 tin nhắn \n15. Khang Trawzn với 0 tin nhắn \n16. Minh Quang với 0 tin nhắn \n17. Minh Trầm Tính với 0 tin nhắn \n18. Ng Van Hungg với 0 tin nhắn \n19. Người dùng Facebook với 0 tin nhắn \n20. Người dùng Facebook với 0 tin nhắn \n21. Người dùng Facebook với 0 tin nhắn \n22. Nguyễn Đức Linh với 0 tin nhắn \n23. Nguyễn Hiếu với 0 tin nhắn \n24. Nguyễn Hoàng với 0 tin nhắn \n25. Nguyễn Hoàng Khang với 0 tin nhắn \n26. Nguyen Ngoc Thanh Truc với 0 tin nhắn \n27. Phạm Tuyết Linh với 0 tin nhắn \n28. Thanh Nhatt với 0 tin nhắn \n29. Thiên Bảo Thiên Quốc với 0 tin nhắn \n30. Thông với 0 tin nhắn \n31. Tran Hung với 0 tin nhắn \n32. Tsumaniac Pyrence với 0 tin nhắn \n33. V Anh Tran với 0 tin nhắn \n34. 胡蝶しのぶ こちょう với 0 tin nhắn \n\n[💬] → Tổng Tin Nhắn: 208\n[🏆] → Bạn hiện đang đứng ở hạng: 4\n───────────────────\n📝 Hướng dẫn lọc thành viên:\n👉 Reply (phản hồi) tin nhắn này theo số thứ tự để xóa thành viên ra khỏi nhóm\n .check locmem + số tin nhắn để xóa thành viên ra khỏi nhóm\n .check reset -> reset lại toàn bộ dữ liệu tin nhắn\n.check ndfb -> kick người dùng bị bay acc khỏi nhóm\n.check box -> xem thông tin nhóm",
+            "time": "14/02/2025 11:02:09",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Dac Di",
+            "message": "[ Cow Valley ]\n───────────────────\n[👤] →⁠ Tên: Hồng Phúc\n[🔐] →⁠ Chức Vụ: Quản Trị Viên\n[📝] → Profile: https://www.facebook.com/profile.php?id=61550752603315\n[⏰] → Thời gian tham gia nhóm:  (false)\n[📜] → Chưa có dữ liệu thời gian người dùng tham gia\n───────────────────\n[💬] → Tin Nhắn Trong Ngày: 26\n[🎖️] → Hạng Trong Ngày: 4\n───────────────────\n[💬] → Tin Nhắn Trong Tuần: 26\n[🎖️] → Hạng Trong Tuần: 4\n───────────────────\n[💬] → Tổng Tin Nhắn: 26\n[🏆] → Xếp Hạng Tổng: 4\n\n📌 Thả cảm xúc \"❤️\" tin nhắn này để xem tổng tin nhắn của toàn bộ thành viên trong nhóm.",
+            "time": "14/02/2025 11:02:33",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Dac Di",
+            "message": "Quyền hạn của lệnh: setmoney là người thuê bot mới sử dụng được nhé",
+            "time": "14/02/2025 11:03:12",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Dac Di",
+            "message": "❎ Dùng .thuebot add + reply tin nhắn người cần thuê",
+            "time": "14/02/2025 11:17:23",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Dac Di",
+            "message": "❎ Dùng .thuebot add + reply tin nhắn người cần thuê",
+            "time": "14/02/2025 11:25:21",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Dac Di",
+            "message": "9045494908879014",
+            "time": "14/02/2025 11:25:27",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Dac Di",
+            "message": "⚠️ Nhóm này đã có dữ liệu thuê bot!",
+            "time": "14/02/2025 11:25:58",
+            "attachment": []
+        }
+    ],
+    "61559447971396": [
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "/thuebot add",
+            "time": "14/02/2025 11:15:24",
+            "attachment": []
+        }
+    ]
+}

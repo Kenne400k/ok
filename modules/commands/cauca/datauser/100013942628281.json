@@ -1,0 +1,125 @@
+{
+  "name": "Vǎn Ťħuận",
+  "ID": "100013942628281",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "Sector Zero",
+    "area": "Arctic"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Boomerang",
+      "category": "Common",
+      "size": 31,
+      "sell": 200,
+      "image": "https://i.imgur.com/dtBM9sP.png"
+    },
+    {
+      "ID": 2,
+      "name": "Pinnacarid",
+      "category": "Uncommon",
+      "size": 54,
+      "sell": 480,
+      "image": "https://i.imgur.com/pbOeb3U.png"
+    },
+    {
+      "ID": 3,
+      "name": "Rockgrub",
+      "category": "Epic",
+      "size": 24,
+      "sell": 1180,
+      "image": "https://i.imgur.com/xbdLdm4.jpg"
+    },
+    {
+      "ID": 4,
+      "name": "Pengling",
+      "category": "Uncommon",
+      "size": 63,
+      "sell": 650,
+      "image": "https://i.imgur.com/Qy0kJT5.png"
+    },
+    {
+      "ID": 5,
+      "name": "Pinnacarid",
+      "category": "Uncommon",
+      "size": 54,
+      "sell": 480,
+      "image": "https://i.imgur.com/pbOeb3U.png"
+    },
+    {
+      "ID": 6,
+      "name": "Pengling",
+      "category": "Uncommon",
+      "size": 63,
+      "sell": 650,
+      "image": "https://i.imgur.com/Qy0kJT5.png"
+    },
+    {
+      "ID": 7,
+      "name": "Titan Holefish",
+      "category": "Epic",
+      "size": 450,
+      "sell": 8690,
+      "image": "https://i.imgur.com/2uJIRkL.png"
+    },
+    {
+      "ID": 8,
+      "name": "Titan Holefish",
+      "category": "Epic",
+      "size": 450,
+      "sell": 8690,
+      "image": "https://i.imgur.com/2uJIRkL.png"
+    },
+    {
+      "ID": 9,
+      "name": "Boomerang",
+      "category": "Common",
+      "size": 31,
+      "sell": 200,
+      "image": "https://i.imgur.com/dtBM9sP.png"
+    },
+    {
+      "ID": 10,
+      "name": "Bladderfish",
+      "category": "Common",
+      "size": 32,
+      "sell": 200,
+      "image": "https://i.imgur.com/W5IegiJ.png"
+    },
+    {
+      "ID": 11,
+      "name": "Boomerang",
+      "category": "Common",
+      "size": 31,
+      "sell": 200,
+      "image": "https://i.imgur.com/dtBM9sP.png"
+    },
+    {
+      "ID": 12,
+      "name": "Arctic Peeper",
+      "category": "Common",
+      "size": 34,
+      "sell": 200,
+      "image": "https://i.imgur.com/Qsx7khe.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 59627,
+      "countdown": 5,
+      "countdownData": 1691157064238,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "19:36:27, 29/7/2023"
+}

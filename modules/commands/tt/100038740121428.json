@@ -1,0 +1,51 @@
+{
+    "total": [
+        {
+            "id": "100038740121428",
+            "count": 157
+        },
+        {
+            "id": "61560118331700",
+            "count": 6
+        },
+        {
+            "id": "61560450915670",
+            "count": 3
+        }
+    ],
+    "week": [
+        {
+            "id": "100038740121428",
+            "count": 52,
+            "name": "Duy メ"
+        },
+        {
+            "id": "61560118331700",
+            "count": 0,
+            "name": "Chạy　Khắp　Trái　Đất　Để　Kím　Em　 Mà　Em　Trốn　Mất　Mẹ　Anh　Đành　 Về　Kím　Người　Yêu　Cũ　Đây"
+        },
+        {
+            "id": "61560450915670",
+            "count": 0,
+            "name": "ᏮᏮᏮ ᏮᏮᏮ"
+        }
+    ],
+    "day": [
+        {
+            "id": "100038740121428",
+            "count": 52,
+            "name": "Duy メ"
+        },
+        {
+            "id": "61560118331700",
+            "count": 0,
+            "name": "Chạy　Khắp　Trái　Đất　Để　Kím　Em　 Mà　Em　Trốn　Mất　Mẹ　Anh　Đành　 Về　Kím　Người　Yêu　Cũ　Đây"
+        },
+        {
+            "id": "61560450915670",
+            "count": 0,
+            "name": "ᏮᏮᏮ ᏮᏮᏮ"
+        }
+    ],
+    "time": 6
+}

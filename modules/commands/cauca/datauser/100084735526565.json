@@ -1,0 +1,69 @@
+{
+  "name": "Đỗ Nv Một",
+  "ID": "100084735526565",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Crater Edge – The Void"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 21,
+      "name": "Grand Demon Leviathan",
+      "category": "Mythical",
+      "size": 37300,
+      "sell": 35345800,
+      "image": "https://i.imgur.com/WuWQOYy.jpg"
+    },
+    {
+      "ID": 22,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 23,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 24,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 25,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    }
+  ],
+  "item": [
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 59028,
+      "countdown": 5,
+      "countdownData": 1691163486319,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "15:57:31, 31/7/2023"
+}

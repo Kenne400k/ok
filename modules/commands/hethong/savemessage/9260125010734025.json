@@ -1,0 +1,1008 @@
+{
+    "100000895922054": [
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".botoff",
+            "time": "14/02/2025 07:25:06",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".",
+            "time": "14/02/2025 07:25:18",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".off",
+            "time": "14/02/2025 07:25:26",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "@Meta AI cách dọn ram vps",
+            "time": "14/02/2025 10:31:10",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "Để dọn RAM trên VPS (Virtual Private Server), bạn có thể thực hiện các bước sau:\n\n1. *Kiểm tra tình trạng RAM*: Sử dụng lệnh `free -m` hoặc `top` để kiểm tra tình trạng RAM trên VPS của bạn. Điều này sẽ giúp bạn xác định xem có bao nhiêu RAM đang được sử dụng và có bao nhiêu RAM còn trống.\n2. *Tắt các tiến trình không cần thiết*: Sử dụng lệnh `ps aux` để xem danh sách các tiến trình đang chạy trên VPS của bạn. Tìm kiếm các tiến trình không cần thiết và tắt chúng đi bằng lệnh `kill <pid>` (thay `<pid>` bằng ID của tiến trình).\n3. *Tối ưu hóa các dịch vụ*: Một số dịch vụ như MySQL, Apache, Nginx,... có thể chiếm nhiều RAM. Bạn có thể tối ưu hóa các dịch vụ này bằng cách điều chỉnh các tham số cấu hình của chúng.\n4. *Sử dụng lệnh `sync` và `echo 3 > /proc/sys/vm/drop_caches`*: Lệnh `sync` sẽ đồng bộ hóa dữ liệu trên đĩa cứng và RAM, trong khi lệnh `echo 3 > /proc/sys/vm/drop_caches` sẽ xóa bỏ các cache không cần thiết trên RAM.\n5. *Khởi động lại VPS*: Nếu bạn đã thực hiện các bước trên và vẫn không thấy sự cải thiện, hãy thử khởi động lại VPS của bạn.\n\nMột số lệnh khác có thể giúp dọn RAM trên VPS:\n\n- `pmap -d <pid>`: Hiển thị thông tin về bộ nhớ của một tiến trình cụ thể.\n- `slabtop`: Hiển thị thông tin về các slab (khối bộ nhớ) trên hệ thống.\n- `vmstat -s`: Hiển thị thông tin về tình trạng bộ nhớ ảo trên hệ thống.\n\nLưu ý: Trước khi thực hiện bất kỳ bước nào, hãy đảm bảo rằng bạn đã sao lưu dữ liệu quan trọng trên VPS của mình.",
+            "time": "14/02/2025 10:31:19",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "@Meta AI cách nào đơn giản hơn k",
+            "time": "14/02/2025 10:31:59",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "Nếu bạn muốn một cách đơn giản hơn, có thể thử các bước sau:\n\n1. Sử dụng lệnh `sync` và `echo 3 > /proc/sys/vm/drop_caches` như tôi đã đề cập trước đó.\n2. Chạy lệnh `sudo sysctl -w vm.swappiness=10` để giảm thiểu việc sử dụng swap trên VPS của bạn.\n3. Sử dụng lệnh `sudo apt-get autoremove` (nếu bạn sử dụng Ubuntu/Debian) hoặc `sudo yum autoremove` (nếu bạn sử dụng CentOS/RHEL) để xóa bỏ các gói phần mềm không cần thiết.\n\nTuy nhiên, cách đơn giản nhất để dọn RAM trên VPS là sử dụng lệnh:\n\n`sudo sync; echo 3 > /proc/sys/vm/drop_caches`\n\nLệnh này sẽ đồng bộ hóa dữ liệu trên đĩa cứng và RAM, sau đó xóa bỏ các cache không cần thiết trên RAM.\n\nLưu ý: Hãy cẩn thận khi sử dụng các lệnh này, vì chúng có thể ảnh hưởng đến hiệu suất của VPS của bạn.",
+            "time": "14/02/2025 10:32:05",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "@Meta AI  bằng cmd à",
+            "time": "14/02/2025 10:42:13",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "Nếu bạn muốn dọn RAM trên VPS bằng cách sử dụng lệnh trên cmd (Command Prompt), bạn có thể sử dụng lệnh sau:\n\n`sync; echo 3 > /proc/sys/vm/drop_caches`\n\nTuy nhiên, nếu bạn đang sử dụng Windows, lệnh trên sẽ không hoạt động. Thay vào đó, bạn có thể sử dụng lệnh sau trên cmd:\n\n`wmic os get freephysicalmemory`\n\nLệnh này sẽ hiển thị thông tin về bộ nhớ RAM trên hệ thống của bạn.\n\nNếu bạn muốn dọn RAM trên VPS bằng cách sử dụng cmd, bạn có thể sử dụng lệnh sau:\n\n`taskkill /im <tên tiến trình>`\n\nThay `<tên tiến trình>` bằng tên của tiến trình mà bạn muốn tắt.\n\nHoặc, bạn có thể sử dụng lệnh sau để xem danh sách các tiến trình đang chạy trên hệ thống:\n\n`tasklist`\n\nSau đó, bạn có thể sử dụng lệnh `taskkill` để tắt các tiến trình không cần thiết.\n\nLưu ý: Hãy cẩn thận khi sử dụng các lệnh này, vì chúng có thể ảnh hưởng đến hiệu suất của hệ thống của bạn.",
+            "time": "14/02/2025 10:42:19",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "Nếu bạn muốn dọn RAM trên VPS bằng cách sử dụng lệnh trên cmd (Command Prompt), bạn có thể sử dụng lệnh sau:\n\n`sync; echo 3 > /proc/sys/vm/drop_caches`\n\nTuy nhiên, nếu bạn đang sử dụng Windows, lệnh trên sẽ không hoạt động. Thay vào đó, bạn có thể sử dụng lệnh sau trên cmd:\n\n`wmic os get freephysicalmemory`\n\nLệnh này sẽ hiển thị thông tin về bộ nhớ RAM trên hệ thống của bạn.\n\nNếu bạn muốn dọn RAM trên VPS bằng cách sử dụng cmd, bạn có thể sử dụng lệnh sau:\n\n`taskkill /im <tên tiến trình>`\n\nThay `<tên tiến trình>` bằng tên của tiến trình mà bạn muốn tắt.\n\nHoặc, bạn có thể sử dụng lệnh sau để xem danh sách các tiến trình đang chạy trên hệ thống:\n\n`tasklist`\n\nSau đó, bạn có thể sử dụng lệnh `taskkill` để tắt các tiến trình không cần thiết.\n\nLưu ý: Hãy cẩn thận khi sử dụng các lệnh này, vì chúng có thể ảnh hưởng đến hiệu suất của hệ thống của bạn.",
+            "time": "14/02/2025 10:47:33",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "@Meta AI dọn ram vps windown phiên bản 2012",
+            "time": "14/02/2025 10:47:42",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "Để dọn RAM trên VPS Windows Server 2012, bạn có thể thực hiện các bước sau:\n\n1. Mở Command Prompt với quyền administrator:\n- Nhấn phím Windows + X và chọn \"Command Prompt (Admin)\"\n- Hoặc, nhấp chuột phải vào biểu tượng Windows và chọn \"Command Prompt (Admin)\"\n2. Sử dụng lệnh sau để xem danh sách các tiến trình đang chạy trên hệ thống:\n`tasklist`\n3. Tìm kiếm các tiến trình không cần thiết và sử dụng lệnh sau để tắt chúng:\n`taskkill /im <tên tiến trình>`\nThay `<tên tiến trình>` bằng tên của tiến trình mà bạn muốn tắt.\n4. Sử dụng lệnh sau để xóa bỏ các file tạm thời trên hệ thống:\n`del /q /f /s %temp%\\*`\n5. Sử dụng lệnh sau để xóa bỏ các file hệ thống không cần thiết:\n`del /q /f /s %systemroot%\\temp\\*`\n6. Sử dụng lệnh sau để xóa bỏ các cache trên hệ thống:\n`vssadmin delete shadows /for=c: /oldest /quiet`\n7. Sử dụng lệnh sau để restart hệ thống:\n`shutdown /r /t 0`\n\nLưu ý: Hãy cẩn thận khi sử dụng các lệnh này, vì chúng có thể ảnh hưởng đến hiệu suất của hệ thống của bạn.\n\nNgoài ra, bạn cũng có thể sử dụng các công cụ sau để dọn RAM trên VPS Windows Server 2012:\n\n- Task Manager: Mở Task Manager bằng cách nhấn phím Ctrl + Shift + Esc, sau đó nhấp chuột vào tab \"Processes\" để xem danh sách các tiến trình đang chạy trên hệ thống.\n- Disk Cleanup: Mở Disk Cleanup bằng cách nhấn phím Windows + R và gõ \"cleanmgr\", sau đó nhấp chuột vào \"OK\" để bắt đầu quá trình dọn dẹp.\n- Windows Update: Đảm bảo rằng hệ thống của bạn đã được cập nhật lên phiên bản mới nhất của Windows Server 2012.",
+            "time": "14/02/2025 10:47:51",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".file",
+            "time": "14/02/2025 10:53:18",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 6",
+            "time": "14/02/2025 10:53:31",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note dosweb.js",
+            "time": "14/02/2025 10:53:46",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "sent",
+            "time": "14/02/2025 10:55:16",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".sent",
+            "time": "14/02/2025 10:55:21",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".cmd load info",
+            "time": "14/02/2025 10:56:16",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".info",
+            "time": "14/02/2025 10:56:21",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "chịu -))",
+            "time": "14/02/2025 11:09:04",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load infoadmin",
+            "time": "14/02/2025 11:09:16",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".file",
+            "time": "14/02/2025 11:09:32",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 12",
+            "time": "14/02/2025 11:10:00",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 1",
+            "time": "14/02/2025 11:10:05",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load in4admin",
+            "time": "14/02/2025 11:10:57",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "in4",
+            "time": "14/02/2025 11:11:03",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4",
+            "time": "14/02/2025 11:11:07",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "send 234",
+            "time": "14/02/2025 11:12:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4 @Di Dac",
+            "time": "14/02/2025 11:12:48",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4admin",
+            "time": "14/02/2025 11:13:00",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": ".rent add 20/10/2025",
+            "time": "14/02/2025 11:26:07",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".",
+            "time": "14/02/2025 11:26:15",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".pending all",
+            "time": "14/02/2025 12:14:43",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "q",
+            "time": "14/02/2025 12:14:52",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "2",
+            "time": "14/02/2025 12:14:58",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".pending all",
+            "time": "14/02/2025 12:15:18",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 12:15:27",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".file",
+            "time": "14/02/2025 12:16:53",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 12",
+            "time": "14/02/2025 12:17:01",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 1",
+            "time": "14/02/2025 12:17:06",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "bot t mà",
+            "time": "14/02/2025 12:17:25",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "m cho t acc này t thây -)",
+            "time": "14/02/2025 12:17:32",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "-)",
+            "time": "14/02/2025 12:17:48",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "send 349",
+            "time": "14/02/2025 12:18:13",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note stk.js",
+            "time": "14/02/2025 12:19:20",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".stk",
+            "time": "14/02/2025 12:20:52",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".stk",
+            "time": "14/02/2025 12:21:02",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".taoanhbox",
+            "time": "14/02/2025 12:23:35",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".",
+            "time": "14/02/2025 12:37:05",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "put",
+            "time": "14/02/2025 12:37:22",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "upt",
+            "time": "14/02/2025 12:37:25",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note acclq.js",
+            "time": "14/02/2025 13:24:05",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": ".gỡ",
+            "time": "14/02/2025 13:24:26",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".acclq",
+            "time": "14/02/2025 13:24:31",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".rs",
+            "time": "14/02/2025 13:26:51",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "@Meta AI [Error: ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Downloads\\Bot bynvh\\file hphong\\modules\\commands\\modules\\commands\\acc.txt'] {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',",
+            "time": "14/02/2025 13:28:16",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "Lỗi này xảy ra khi chương trình của bạn cố gắng mở một file không tồn tại.\n\nTrong trường hợp này, file `acc.txt` không tồn tại trong thư mục `C:\\Users\\Administrator\\Downloads\\Bot bynvh\\file hphong\\modules\\commands\\modules\\commands\\`.\n\nĐể giải quyết vấn đề này, bạn cần kiểm tra xem file `acc.txt` có tồn tại trong thư mục đó hay không. Nếu file không tồn tại, bạn cần tạo file đó hoặc sửa đổi chương trình của mình để không cố gắng mở file đó.\n\nMột số cách để giải quyết vấn đề này:\n\n1. *Tạo file `acc.txt`*: Tạo một file mới có tên `acc.txt` trong thư mục `C:\\Users\\Administrator\\Downloads\\Bot bynvh\\file hphong\\modules\\commands\\modules\\commands\\`.\n2. *Sửa đổi đường dẫn file*: Kiểm tra xem đường dẫn file `acc.txt` có chính xác hay không. Nếu đường dẫn file không chính xác, hãy sửa đổi đường dẫn file để trỏ đến vị trí chính xác của file.\n3. *Kiểm tra tồn tại file trước khi mở*: Trước khi mở file, bạn có thể kiểm tra xem file có tồn tại hay không bằng cách sử dụng hàm `fs.existsSync()` trong Node.js.\n\nVí dụ:\n```\nconst fs = require('fs');\nconst filePath = 'C:\\\\Users\\\\Administrator\\\\Downloads\\\\Bot bynvh\\\\file hphong\\\\modules\\\\commands\\\\modules\\\\commands\\\\acc.txt';\n\nif (fs.existsSync(filePath)) {\n  // Mở file\n  fs.open(filePath, 'r', (err, fd) => {\n    // ...\n  });\n} else {\n  console.log('File không tồn tại');\n}\n```\nHy vọng những gợi ý này sẽ giúp bạn giải quyết vấn đề!",
+            "time": "14/02/2025 13:28:25",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note acclq.js",
+            "time": "14/02/2025 13:28:53",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load acclq",
+            "time": "14/02/2025 13:29:29",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".acclq",
+            "time": "14/02/2025 13:29:34",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "nice",
+            "time": "14/02/2025 13:29:49",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".",
+            "time": "14/02/2025 14:06:35",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "...",
+            "time": "14/02/2025 14:06:39",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".offbot",
+            "time": "14/02/2025 14:06:59",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note offbot.js",
+            "time": "14/02/2025 14:09:33",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".offbot",
+            "time": "14/02/2025 14:10:48",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load offbot",
+            "time": "14/02/2025 14:11:04",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note offbot.js",
+            "time": "14/02/2025 14:11:13",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".offbot",
+            "time": "14/02/2025 14:11:26",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".",
+            "time": "14/02/2025 14:32:30",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".autott",
+            "time": "14/02/2025 14:33:29",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".avtwibu",
+            "time": "14/02/2025 14:33:42",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".thuphap",
+            "time": "14/02/2025 14:34:27",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note in4admin.js",
+            "time": "14/02/2025 15:04:14",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load in4admin",
+            "time": "14/02/2025 15:05:32",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4admin",
+            "time": "14/02/2025 15:05:38",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note in4admin.js",
+            "time": "14/02/2025 15:05:52",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4admin",
+            "time": "14/02/2025 15:08:12",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd loadAll",
+            "time": "14/02/2025 15:08:31",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".audio",
+            "time": "14/02/2025 15:08:43",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".gpt",
+            "time": "14/02/2025 15:09:05",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".bigtext Vh",
+            "time": "14/02/2025 15:09:18",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".bigtext vincent",
+            "time": "14/02/2025 15:09:30",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".in4admin",
+            "time": "14/02/2025 15:15:17",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".file",
+            "time": "14/02/2025 15:17:17",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 12",
+            "time": "14/02/2025 15:17:24",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "open 1",
+            "time": "14/02/2025 15:17:30",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "send 94",
+            "time": "14/02/2025 15:18:14",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".cache",
+            "time": "14/02/2025 15:18:21",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": ".gỡ",
+            "time": "14/02/2025 15:19:28",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb anime",
+            "time": "14/02/2025 15:21:17",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "2",
+            "time": "14/02/2025 15:21:34",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 15:21:39",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb mở lối cho em remix",
+            "time": "14/02/2025 15:29:23",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "5",
+            "time": "14/02/2025 15:29:36",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 15:29:44",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "6",
+            "time": "14/02/2025 16:41:40",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "2",
+            "time": "14/02/2025 16:41:46",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb nhạc remix",
+            "time": "14/02/2025 16:42:58",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "6",
+            "time": "14/02/2025 16:43:05",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 16:43:11",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb nhạc remix",
+            "time": "14/02/2025 16:43:57",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "4",
+            "time": "14/02/2025 16:44:17",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 16:44:23",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb nhạc remix 50p",
+            "time": "14/02/2025 16:45:07",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb nhạc tiktok remix 50p",
+            "time": "14/02/2025 16:45:34",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "3",
+            "time": "14/02/2025 16:45:57",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 16:46:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".ytb nhạc remix 15p",
+            "time": "14/02/2025 16:47:59",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "5",
+            "time": "14/02/2025 16:48:12",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Ng Van Hungg",
+            "message": "1",
+            "time": "14/02/2025 16:48:16",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".cache all",
+            "time": "14/02/2025 16:49:20",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note cache.js",
+            "time": "14/02/2025 16:49:36",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".dú",
+            "time": "14/02/2025 19:45:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".dú",
+            "time": "14/02/2025 19:45:27",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load dú",
+            "time": "14/02/2025 19:48:20",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".dú",
+            "time": "14/02/2025 19:48:25",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".note dú.js",
+            "time": "14/02/2025 19:49:01",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": "cmd load dú",
+            "time": "14/02/2025 19:56:02",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".dú",
+            "time": "14/02/2025 19:56:06",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".dú",
+            "time": "14/02/2025 19:56:23",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".anhgai",
+            "time": "14/02/2025 19:56:40",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".gái",
+            "time": "14/02/2025 19:56:52",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Ng Van Hungg",
+            "message": ".file",
+            "time": "14/02/2025 20:22:56",
+            "attachment": []
+        }
+    ],
+    "61559447971396": [
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "Vc",
+            "time": "14/02/2025 10:42:36",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "",
+            "time": "14/02/2025 10:42:37",
+            "attachment": [
+                {
+                    "type": "photo",
+                    "ID": "1141198924459625",
+                    "filename": "image-1141198924459625",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/475384126_543688711346543_1651279751254635142_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=wncbWhsou2oQ7kNvgG2CUze&_nc_oc=Adi0TfgB8jjnVfqPJ5V_kmqYe5BV-gPcHhk1tpan-7ALTJmKtnSeEU9R9p4kNAB0anU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHW-2hPMMjB0Qn8TpdxeQrzn6wsNofTSXWBbj9Kn3VH8w&oe=67D620DB",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/475384126_543688711346543_1651279751254635142_n.jpg?stp=dst-jpg_p280x280_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=wncbWhsou2oQ7kNvgG2CUze&_nc_oc=Adi0TfgB8jjnVfqPJ5V_kmqYe5BV-gPcHhk1tpan-7ALTJmKtnSeEU9R9p4kNAB0anU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gF3UvXgkjLyNxGmj7dCGH4lvPvmI-1gwv83Aa137AkFRA&oe=67D620DB",
+                    "previewWidth": 280,
+                    "previewHeight": 607,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/475384126_543688711346543_1651279751254635142_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=wncbWhsou2oQ7kNvgG2CUze&_nc_oc=Adi0TfgB8jjnVfqPJ5V_kmqYe5BV-gPcHhk1tpan-7ALTJmKtnSeEU9R9p4kNAB0anU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH89fjvGp1AE0SRpBf0t5RBIEAnx8v7AmXd4f41-rXVuA&oe=67D620DB",
+                    "largePreviewWidth": 480,
+                    "largePreviewHeight": 1040,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/475384126_543688711346543_1651279751254635142_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=wncbWhsou2oQ7kNvgG2CUze&_nc_oc=Adi0TfgB8jjnVfqPJ5V_kmqYe5BV-gPcHhk1tpan-7ALTJmKtnSeEU9R9p4kNAB0anU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH89fjvGp1AE0SRpBf0t5RBIEAnx8v7AmXd4f41-rXVuA&oe=67D620DB",
+                    "width": 945,
+                    "height": 2048,
+                    "name": "image-1141198924459625"
+                },
+                {
+                    "type": "photo",
+                    "ID": "1252411249192292",
+                    "filename": "image-1252411249192292",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476872421_1563508194274807_5482029190039530080_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=X5o6TAL8sPsQ7kNvgET4TQr&_nc_oc=AdjQ1t9244JQ1NM5ujnOdewlvLejJbPLTCrBiM_q_9LSqua2t1nK-wuzpzoQZxHU8WI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFb76Ak_rJcbC2FnrFIPd3th1AamxkFRWku_LbbXhUtfQ&oe=67D61A79",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476872421_1563508194274807_5482029190039530080_n.jpg?stp=dst-jpg_p280x280_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=X5o6TAL8sPsQ7kNvgET4TQr&_nc_oc=AdjQ1t9244JQ1NM5ujnOdewlvLejJbPLTCrBiM_q_9LSqua2t1nK-wuzpzoQZxHU8WI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH3hlMqhjGHNf4FBOXT225e2UGnC1LYBG4IOYROK5OAoQ&oe=67D61A79",
+                    "previewWidth": 280,
+                    "previewHeight": 607,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476872421_1563508194274807_5482029190039530080_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=X5o6TAL8sPsQ7kNvgET4TQr&_nc_oc=AdjQ1t9244JQ1NM5ujnOdewlvLejJbPLTCrBiM_q_9LSqua2t1nK-wuzpzoQZxHU8WI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFV-JVO-tkoycw0RNUeKZj8VKzsxnC66iHvVTxZmVcx-w&oe=67D61A79",
+                    "largePreviewWidth": 480,
+                    "largePreviewHeight": 1040,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476872421_1563508194274807_5482029190039530080_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=X5o6TAL8sPsQ7kNvgET4TQr&_nc_oc=AdjQ1t9244JQ1NM5ujnOdewlvLejJbPLTCrBiM_q_9LSqua2t1nK-wuzpzoQZxHU8WI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFV-JVO-tkoycw0RNUeKZj8VKzsxnC66iHvVTxZmVcx-w&oe=67D61A79",
+                    "width": 945,
+                    "height": 2048,
+                    "name": "image-1252411249192292"
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "@Meta AI events.js:377\n\nthrow er; // Unhandled 'error' event\n\nError: listen EADDRINUSE: address already in use:::80\n\nat Server.setupListenHandle [as listen2] (net.js:1331:16)\n\nat listenInCluster (net.js:1379:12)\n\nat Server.listen (net.js:1465:7)\n\nat Function.listen (C:\\Users\\Administrator\\Downloads\\test-1\\test-1\\no de_modules\\express\\lib\\application.js:635:24)\n\nat Object.<anonymous> (C:\\Users\\Administrator\\Downloads\\test-1\\test-1 \\Fca-Horizon-Remastered-main\\Main.js:110:62)\n\n:10) at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143\n\nat Module._compile (internal/modules/cjs/loader.js:1114:14)\n\nat Module.load (internal/modules/cjs/loader.js:979:32)\n\nat Function.Module._load (internal/modules/cjs/loader.js:819:12)\n\nat Module.require (internal/modules/cjs/loader.js:1003:19)\n\nat require (internal/modules/cjs/helpers.js:107:18)\n\nat module.exports (C:\\Users\\Administrator\\Downloads\\test-1\\test-1\\Fca -Horizon-Remastered-main\\index.js:267:17)\n\nat onBot (C:\\Users\\Administrator\\Downloads\\test-1\\test-1\\lekhanh.js:1 53:5)\n\nat C:\\Users\\Administrator\\Downloads\\test-1\\test-1\\lekhanh.js:357:9 Emitted 'error' event on Server instance at:\n\n{\n\nat emitErrorNT (net.js:1358:8)\n\nat processTicksAndRejections (internal/process/task_queues.js:82:21)\n\ncode: 'EADDRINUSE',\n\nerrno: -4091,\n\nsyscall: 'listen',\n\naddress:\n\nport: 80\n}",
+            "time": "14/02/2025 10:48:44",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Hồ Đắc Di",
+            "message": "Lỗi này xảy ra khi bạn cố gắng chạy một ứng dụng trên cổng 80, nhưng cổng này đã được sử dụng bởi một ứng dụng khác.\n\nĐể giải quyết vấn đề này, bạn có thể thực hiện một trong các bước sau:\n\n1. *Thay đổi cổng*: Thay đổi cổng mà ứng dụng của bạn đang sử dụng. Ví dụ, bạn có thể sử dụng cổng 8080 hoặc 3000.\n2. *Tắt ứng dụng khác*: Tìm kiếm và tắt ứng dụng khác đang sử dụng cổng 80.\n3. *Sử dụng lệnh `netstat`*: Sử dụng lệnh `netstat` để tìm kiếm ứng dụng đang sử dụng cổng 80.\n- Mở Command Prompt và chạy lệnh `netstat -an | findstr 80`\n- Điều này sẽ hiển thị thông tin về ứng dụng đang sử dụng cổng 80.\n4. *Sử dụng lệnh `taskkill`*: Sử dụng lệnh `taskkill` để tắt ứng dụng đang sử dụng cổng 80.\n- Mở Command Prompt và chạy lệnh `taskkill /pid <pid> /f`\n- Thay `<pid>` bằng ID của ứng dụng đang sử dụng cổng 80.\n\nSau khi giải quyết vấn đề, bạn có thể chạy lại ứng dụng của mình để kiểm tra xem lỗi đã được giải quyết chưa.",
+            "time": "14/02/2025 10:48:54",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "@Meta AI pid là id gì",
+            "time": "14/02/2025 10:49:55",
+            "attachment": []
+        },
+        {
+            "type": "message_reply",
+            "name": "Hồ Đắc Di",
+            "message": "PID (Process ID) là một số duy nhất được gán cho mỗi quá trình (process) đang chạy trên hệ thống. PID được sử dụng để xác định và quản lý các quá trình trên hệ thống.\n\nKhi bạn chạy lệnh `netstat -an | findstr 80`, bạn sẽ thấy một danh sách các quá trình đang sử dụng cổng 80, bao gồm cả PID của chúng.\n\nPID thường được hiển thị dưới dạng một số nguyên (integer) và có thể được sử dụng để tắt hoặc quản lý quá trình tương ứng.\n\nVí dụ, nếu bạn thấy một dòng như sau:\n\n`TCP 0.0.0.0:80 0.0.0.0:0 LISTENING 1234`\n\nTrong trường hợp này, PID của quá trình đang sử dụng cổng 80 là `1234`. Bạn có thể sử dụng PID này để tắt quá trình bằng cách chạy lệnh `taskkill /pid 1234 /f`.",
+            "time": "14/02/2025 10:50:00",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "Fix như nào đây",
+            "time": "14/02/2025 10:56:53",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "@Ng Van Hungg",
+            "time": "14/02/2025 11:16:12",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "",
+            "time": "14/02/2025 11:16:22",
+            "attachment": [
+                {
+                    "type": "photo",
+                    "ID": "1155238509530925",
+                    "filename": "image-1155238509530925",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476573227_1295786935039038_6723110800810705927_n.jpg?stp=cp0_dst-jpg_s50x50_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JLF5eCv3GskQ7kNvgEw9L5i&_nc_oc=Adggtov84p3ARVUKNcerJk70b0d-w1K7cuY8ICjNQ5xDaFdBQMnV1ZsPErubCCr_DTI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGPVaZ0Xu0v7CF0d9JrpyLL1lhx4a0i2iyEf45IYCgB6w&oe=67D62979",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476573227_1295786935039038_6723110800810705927_n.jpg?stp=dst-jpg_p280x280_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JLF5eCv3GskQ7kNvgEw9L5i&_nc_oc=Adggtov84p3ARVUKNcerJk70b0d-w1K7cuY8ICjNQ5xDaFdBQMnV1ZsPErubCCr_DTI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFqGm9-ioghuoJo-y4sV4zRe6cq0807u2lurDZLdHJHhQ&oe=67D62979",
+                    "previewWidth": 280,
+                    "previewHeight": 607,
+                    "largePreviewUrl": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476573227_1295786935039038_6723110800810705927_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JLF5eCv3GskQ7kNvgEw9L5i&_nc_oc=Adggtov84p3ARVUKNcerJk70b0d-w1K7cuY8ICjNQ5xDaFdBQMnV1ZsPErubCCr_DTI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFWtvSUpCzC41IXsTHtK_JwJ-KyMaYQ-RR7W746--i9sA&oe=67D62979",
+                    "largePreviewWidth": 480,
+                    "largePreviewHeight": 1040,
+                    "url": "https://scontent.xx.fbcdn.net/v/t1.15752-9/476573227_1295786935039038_6723110800810705927_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=JLF5eCv3GskQ7kNvgEw9L5i&_nc_oc=Adggtov84p3ARVUKNcerJk70b0d-w1K7cuY8ICjNQ5xDaFdBQMnV1ZsPErubCCr_DTI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFWtvSUpCzC41IXsTHtK_JwJ-KyMaYQ-RR7W746--i9sA&oe=67D62979",
+                    "width": 945,
+                    "height": 2048,
+                    "name": "image-1155238509530925"
+                }
+            ]
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "Ơ",
+            "time": "14/02/2025 12:17:11",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "Bot off rồi mà",
+            "time": "14/02/2025 12:17:19",
+            "attachment": []
+        },
+        {
+            "type": "message",
+            "name": "Hồ Đắc Di",
+            "message": "À",
+            "time": "14/02/2025 12:17:37",
+            "attachment": []
+        }
+    ]
+}

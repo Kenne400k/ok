@@ -1,0 +1,20 @@
+{
+    "name": "Linh Hoàng",
+    "ID": "100036287287366",
+    "mainROD": null,
+    "GPS": {
+        "locate": null,
+        "area": null
+    },
+    "fishBag": [
+        {
+            "ID": 0,
+            "name": "Cá Thách Đấu",
+            "category": "Legendary",
+            "size": 999999,
+            "sell": 0
+        }
+    ],
+    "item": [],
+    "timeRegister": "18:48:17, 4/8/2023"
+}

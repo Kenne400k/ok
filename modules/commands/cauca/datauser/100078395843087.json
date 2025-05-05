@@ -1,0 +1,269 @@
+{
+  "name": "Nguyên Mai Đình",
+  "ID": "100078395843087",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "Sector Zero",
+    "area": "World Edge – The Void"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 2,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 3,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 4,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 5,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 6,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 7,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 8,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 9,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 10,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 11,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 12,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 13,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 14,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 15,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 16,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 17,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 18,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 19,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 20,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 21,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 22,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 23,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 24,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 25,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 26,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 27,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 28,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 29,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "Ion Powered Trident",
+      "price": 57000,
+      "durability": 1980,
+      "countdown": 15,
+      "countdownData": 1690791143447,
+      "image": "https://i.imgur.com/W5dAfCn.jpg"
+    },
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 51907,
+      "countdown": 5,
+      "countdownData": 1691217907551,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "22:49:48, 27/7/2023"
+}

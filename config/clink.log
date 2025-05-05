@@ -1,0 +1,67 @@
+08f4 app_context::start_logger  476 ---- 2025/02/14 06:51:04.698 -------------------------------------------------
+08f4 app_context::start_logger  479 Host process is 'cmd.exe' (pid 2292)
+08f4 app_context::start_logger  483 DLL path is 'C:\Users\Administrator\Downloads\Bot bynvh\file hphong\vendor\clink'
+08f4 app_context::start_logger  498 Windows version 6.3.9600 (x64)
+08f4 app_context::start_logger  500 Clink version 1.6.14.93b83f (x64)
+08f4 hook_setter::hook_setter  159 >>> Started hook transaction.
+08f4 hook_setter::attach_iat   316 Attempting to hook SetEnvironmentVariableW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-2-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF508 (value is 00007FFCFD87B4D0).
+08f4 hook_setter::attach_iat   316 Attempting to hook SetEnvironmentStringsW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-2-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF538 (value is 00007FFCFD8C30D0).
+08f4 hook_setter::attach_iat   316 Attempting to hook WriteConsoleW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF388 (value is 00007FFCFD8848F0).
+08f4 hook_setter::attach_iat   316 Attempting to hook GetEnvironmentVariableW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-2-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF520 (value is 00007FFCFD8691B0).
+08f4 hook_setter::commit       207 <<< Hook transaction committed.
+08f4 hook_setter::hook_setter  159 >>> Started hook transaction.
+08f4 hook_setter::detach_iat   359 Attempting to unhook 00007FFCDB335200 from GetEnvironmentVariableW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-processenvironment-l1-2-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF520 (value is 00007FFCDB335200).
+08f4 hook_setter::commit       207 <<< Hook transaction committed.
+08f4 hook_setter::hook_setter  159 >>> Started hook transaction.
+08f4 hook_setter::attach_iat   316 Attempting to hook ReadConsoleW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l1-1-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF370 (value is 00007FFCFD930570).
+08f4 hook_setter::commit       207 <<< Hook transaction committed.
+08f4 hook_setter::hook_setter  159 >>> Started hook transaction.
+08f4 hook_setter::attach_iat   316 Attempting to hook SetConsoleTitleW in IAT for module 00007FF670DA0000.
+08f4 pe_info::iterate_imports  195 Found import in 'api-ms-win-core-console-l2-1-0.dll'
+08f4 find_iat                  124 Found import at 00007FF670DEF578 (value is 00007FFCFD884A40).
+08f4 hook_setter::commit       207 <<< Hook transaction committed.
+08f4 win_screen_buffer::begin  366 Using native terminal support (auto mode found 'ConEmuHk64.dll').
+08f4 host_lua::load_scripts    192 Loaded 2 Lua scripts in 107 ms
+08f4 @~clink~/app/update.lua   356 Clink updater: updating because there is no record of having updated before.
+08f4 extract_ctag              931 read 0 bytes
+08f4 extract_ctag              931 read 0 bytes
+08f4 history_db::initialise   1321 master bank ctag: |CTAG_1739490665_2497724843_2292_0
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 @~clink~/app/update.lua   107 Clink updater: found PowerShell v4.0.
+08f4 @~clink~/app/update.lua   531 Clink updater: autoupdate requires PowerShell v5.
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 check_auto_answer         121 Auto-answer; 'Terminate batch job (Y/N)? ' (NY)
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted
+08f4 history_db::compact      1599 History:  0 active, 0 deleted

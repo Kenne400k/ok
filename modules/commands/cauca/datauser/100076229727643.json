@@ -1,0 +1,61 @@
+{
+  "name": "Vũ Thanh Bình",
+  "ID": "100076229727643",
+  "mainROD": "Ion Powered Trident",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Kelp Forest"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Hoopfish",
+      "category": "Common",
+      "size": 27,
+      "sell": 200,
+      "image": "https://i.imgur.com/1I7IeiH.png"
+    },
+    {
+      "ID": 2,
+      "name": "Eyeye",
+      "category": "Common",
+      "size": 28,
+      "sell": 180,
+      "image": "https://i.imgur.com/jdcU4nC.png"
+    },
+    {
+      "ID": 3,
+      "name": "Rabbit Ray",
+      "category": "Uncommon",
+      "size": 40,
+      "sell": 370,
+      "image": "https://i.imgur.com/jjzQDkj.jpg"
+    },
+    {
+      "ID": 4,
+      "name": "Rabbit Ray",
+      "category": "Uncommon",
+      "size": 40,
+      "sell": 370,
+      "image": "https://i.imgur.com/jjzQDkj.jpg"
+    }
+  ],
+  "item": [
+    {
+      "name": "Ion Powered Trident",
+      "price": 57000,
+      "durability": 1910,
+      "countdown": 15,
+      "countdownData": 1691135699263,
+      "image": "https://i.imgur.com/W5dAfCn.jpg"
+    }
+  ],
+  "timeRegister": "20:56:03, 3/8/2023"
+}

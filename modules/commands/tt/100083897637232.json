@@ -1,0 +1,37 @@
+{
+    "total": [
+        {
+            "id": "100083897637232",
+            "count": 113
+        },
+        {
+            "id": "100000230609068",
+            "count": 10
+        }
+    ],
+    "week": [
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        },
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        }
+    ],
+    "day": [
+        {
+            "id": "100083897637232",
+            "count": 0,
+            "name": "Hoàng Anh Tuấn"
+        },
+        {
+            "id": "100000230609068",
+            "count": 0,
+            "name": "Patricia Stheling"
+        }
+    ],
+    "time": 6
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Tr Nhug",
+  "ID": "100075250385990",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Crater Edge – The Void"
+  },
+  "fishBag": [
+    {
+      "ID": 1,
+      "name": "Grand Demon Leviathan",
+      "category": "Mythical",
+      "size": 37300,
+      "sell": 35345800,
+      "image": "https://i.imgur.com/WuWQOYy.jpg"
+    },
+    {
+      "ID": 2,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 3,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    },
+    {
+      "ID": 4,
+      "name": "Ghost Leviathan Juvenile",
+      "category": "Legendary",
+      "size": 6700,
+      "sell": 720500,
+      "image": "https://i.imgur.com/R4SDc8k.jpg"
+    }
+  ],
+  "item": [
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 59440,
+      "countdown": 5,
+      "countdownData": 1691165756954,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "14:07:12, 4/8/2023"
+}

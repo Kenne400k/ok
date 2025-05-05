@@ -1,0 +1,149 @@
+{
+    "total": [
+        {
+            "id": "61553379689875",
+            "count": 16
+        },
+        {
+            "id": "61553498602370",
+            "count": 28
+        },
+        {
+            "id": "61555063117711",
+            "count": 0
+        },
+        {
+            "id": "100004178193648",
+            "count": 0
+        },
+        {
+            "id": "100004297534027",
+            "count": 34
+        },
+        {
+            "id": "100041313699057",
+            "count": 4
+        },
+        {
+            "id": "100077029668049",
+            "count": 34
+        },
+        {
+            "id": "100078174772599",
+            "count": 0
+        },
+        {
+            "id": "100087659527478",
+            "count": 48
+        },
+        {
+            "id": "100091378734038",
+            "count": 8
+        }
+    ],
+    "week": [
+        {
+            "id": "61553379689875",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61553498602370",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61555063117711",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100004178193648",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100004297534027",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041313699057",
+            "count": 0,
+            "name": "Hw Xb"
+        },
+        {
+            "id": "100077029668049",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100078174772599",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087659527478",
+            "count": 0,
+            "name": "Trần Xuân Bách"
+        },
+        {
+            "id": "100091378734038",
+            "count": 0,
+            "name": "Ng Nh Linh"
+        }
+    ],
+    "day": [
+        {
+            "id": "61553379689875",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61553498602370",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "61555063117711",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100004178193648",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100004297534027",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100041313699057",
+            "count": 0,
+            "name": "Hw Xb"
+        },
+        {
+            "id": "100077029668049",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100078174772599",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100087659527478",
+            "count": 0,
+            "name": "Trần Xuân Bách"
+        },
+        {
+            "id": "100091378734038",
+            "count": 0,
+            "name": "Ng Nh Linh"
+        }
+    ],
+    "time": 6
+}

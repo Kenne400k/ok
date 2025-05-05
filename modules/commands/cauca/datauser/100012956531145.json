@@ -1,0 +1,157 @@
+{
+  "name": "Nguyễn Scar",
+  "ID": "100012956531145",
+  "mainROD": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Sparse Reef"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Cá Thách Đấu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Warper",
+      "category": "Epic",
+      "size": 170,
+      "sell": 3480,
+      "image": "https://i.imgur.com/XRsxfIV.png"
+    },
+    {
+      "ID": 2,
+      "name": "Warper",
+      "category": "Epic",
+      "size": 170,
+      "sell": 3480,
+      "image": "https://i.imgur.com/XRsxfIV.png"
+    },
+    {
+      "ID": 3,
+      "name": "Crimson Ray",
+      "category": "Uncommon",
+      "size": 300,
+      "sell": 100,
+      "image": "https://i.imgur.com/ii63Q5r.png"
+    },
+    {
+      "ID": 4,
+      "name": "Warper",
+      "category": "Epic",
+      "size": 170,
+      "sell": 3480,
+      "image": "https://i.imgur.com/XRsxfIV.png"
+    },
+    {
+      "ID": 5,
+      "name": "Red Eyeye",
+      "category": "Common",
+      "size": 36,
+      "sell": 230,
+      "image": "https://i.imgur.com/5CynMOd.png"
+    },
+    {
+      "ID": 6,
+      "name": "Sea Dragon Leviathan",
+      "category": "Legendary",
+      "size": 11000,
+      "sell": 1580000,
+      "image": "https://i.imgur.com/iALri8R.png"
+    },
+    {
+      "ID": 7,
+      "name": "Crimson Ray",
+      "category": "Uncommon",
+      "size": 300,
+      "sell": 100,
+      "image": "https://i.imgur.com/ii63Q5r.png"
+    },
+    {
+      "ID": 8,
+      "name": "Magmarang",
+      "category": "Common",
+      "size": 33,
+      "sell": 210,
+      "image": "https://i.imgur.com/0bOcIwM.png"
+    },
+    {
+      "ID": 9,
+      "name": "Magmarang",
+      "category": "Common",
+      "size": 33,
+      "sell": 210,
+      "image": "https://i.imgur.com/0bOcIwM.png"
+    },
+    {
+      "ID": 10,
+      "name": "Lava Lizard",
+      "category": "Rare",
+      "size": 870,
+      "sell": 3850,
+      "image": "https://i.imgur.com/AblidWp.png"
+    },
+    {
+      "ID": 11,
+      "name": "Crimson Ray",
+      "category": "Uncommon",
+      "size": 300,
+      "sell": 100,
+      "image": "https://i.imgur.com/ii63Q5r.png"
+    },
+    {
+      "ID": 12,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 13,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 14,
+      "name": "Void Chelicerate",
+      "category": "Legendary",
+      "size": 6500,
+      "sell": 1107080,
+      "image": "https://i.imgur.com/VuLnzT8.png"
+    },
+    {
+      "ID": 15,
+      "name": "Shuttlebug",
+      "category": "Uncommon",
+      "size": 27,
+      "sell": 410,
+      "image": "https://i.imgur.com/Mly7Elf.jpg"
+    },
+    {
+      "ID": 16,
+      "name": "Shuttlebug",
+      "category": "Uncommon",
+      "size": 27,
+      "sell": 410,
+      "image": "https://i.imgur.com/Mly7Elf.jpg"
+    }
+  ],
+  "item": [
+    {
+      "name": "𝖀𝖓𝖐𝖓𝖔𝖜𝖓 𝕿𝖗𝖎𝖉𝖊𝖓𝖙",
+      "price": 1675000,
+      "durability": 59330,
+      "countdown": 5,
+      "countdownData": 1691219163920,
+      "image": "https://i.imgur.com/EDozSgg.jpg"
+    }
+  ],
+  "timeRegister": "14:09:33, 4/8/2023"
+}
