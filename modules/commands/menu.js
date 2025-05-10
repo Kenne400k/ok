@@ -1,179 +1,154 @@
 module.exports.config = {
     name: "menu",
-    version: "3.0.0",
+    version: "4.0.0",
     hasPermssion: 0,
-    credits: "hphong",
-    description: "Hướng dẫn cho người mới",
+    credits: "Pcoder",
+    description: "Hướng dẫn sử dụng bot và các lệnh.",
     usages: "[all/-a] [số trang]",
-    commandCategory: "Dành cho người dùng",
-    usePrefix: false,
-    cooldowns: 5
+    commandCategory: "Thông tin",
+    usePrefix: true,
+    cooldowns: 5,
+    envConfig: {
+        "autoUnsend": true,
+        "delayUnsend": 60
+    }
 };
 
 module.exports.handleReply = async function ({ api, event, handleReply }) {
     const { commands } = global.client;
-    const num = parseInt(event.body.trim());
+    const { body, threadID, messageID, senderID } = event;
+    const num = parseInt(body.trim());
     const prefix = global.config.PREFIX;
 
-    // Kiểm tra và xử lý khi reply lệnh trong nhóm chủ đề
+    // Xử lý reply cho nhóm chủ đề
     if (handleReply.type === "cmd_group") {
         if (isNaN(num) || num <= 0 || num > handleReply.content.length) {
-            return api.sendMessage({
-                body: "𝗦𝗼̂́ 𝗯𝗮̣𝗻 𝗰𝗵𝗼̣𝗻 𝗸𝗵𝗼̂𝗻𝗴 𝗻𝗮̆̀𝗺 𝘁𝗿𝗼𝗻𝗴 𝗱𝗮𝗻𝗵 𝘀𝗮́𝗰𝗵, 𝘃𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝘁𝗵𝘂̛̉ 𝗹𝗮̣𝗶!!",
-                attachment: global.khanhdayr.splice(0, 1)
-            }, event.threadID);
+            return api.sendMessage("❌ | 𝗦𝗼̂́ 𝗯𝗮̣𝗻 𝗰𝗵𝗼̣𝗻 𝗸𝗵𝗼̂𝗻𝗴 𝗵𝗼̛̣𝗽 𝗹𝗲̣̂, 𝘃𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝘁𝗵𝘂̛̉ 𝗹𝗮̣𝗶!", threadID, messageID);
         }
 
-        let selectedGroup = handleReply.content[num - 1]; // Lấy nhóm chủ đề được chọn
-        let selectedCommands = [];
+        const selectedGroup = handleReply.content[num - 1];
+        let commandList = selectedGroup.cmds.map(cmdName => {
+            const cmd = commands.get(cmdName);
+            return cmd ? `» ${prefix}${cmdName}: ${cmd.config.description}` : null;
+        }).filter(item => item); // Loại bỏ các lệnh null
 
-        // Lấy danh sách các lệnh thuộc nhóm chủ đề đã chọn
-        selectedGroup.cmds.forEach(cmdName => {
-            let commandConfig = commands.get(cmdName)?.config;
-            if (commandConfig) {
-                selectedCommands.push({
-                    name: cmdName,
-                    description: commandConfig.description
-                });
-            }
-        });
-
-        // Hiển thị các lệnh trong chủ đề được chọn
-        let msg = `===== 𝐋𝐞̣̂𝐧𝐡 𝐂𝐡𝐮̉ Đ𝐞̂̀: ${selectedGroup.group.toUpperCase()} =====\n`;
-        selectedCommands.forEach((cmd, index) => {
-            msg += `\n${index + 1}. » ${cmd.name}: ${cmd.description}`;
-        });
-
-        // Kiểm tra và lấy video nếu có từ global.khanhdayr
-        let attachment = global.khanhdayr?.length > 0 ? global.khanhdayr.splice(0, 1) : null;
-
-        // Thêm thông tin chi tiết lệnh và video (nếu có)
-        msg += `\n\n[🧸] 𝗕𝗮̣𝗻 𝗰𝗼́ 𝘁𝗵𝗲̂̉ 𝗱𝘂̀𝗻𝗴 ${prefix}𝗺𝗲𝗻𝘂 𝗮𝗹𝗹 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝑎̂́𝘁 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵`;
-
-        let msgData = { body: msg };
-        if (attachment) {
-            msgData.attachment = attachment;  // Đính kèm video từ global.khanhdayr nếu có
+        if (commandList.length === 0) {
+            return api.sendMessage("⚠️ | 𝗛𝗶𝗲̣̂𝗻 𝘁𝗮̣𝗶 𝗸𝗵𝗼̂𝗻𝗴 𝗰𝗼́ 𝗹𝗲̣̂𝗻𝗵 𝗻𝗮̀𝗼 𝘁𝗿𝗼𝗻𝗴 𝗰𝗵𝘂̉ đ𝗲̂̀ 𝗻𝗮̀𝘆.", threadID, messageID);
         }
 
-        // Gửi tin nhắn và tiếp tục xử lý reply để người dùng có thể chọn số thứ tự lệnh
-        return api.sendMessage(msgData, event.threadID, (error, info) => {
+        const totalCommands = commandList.length;
+        const commandsPerPage = 10;
+        const totalPages = Math.ceil(totalCommands / commandsPerPage);
+        let currentPage = 1;
+
+        if (handleReply.page) {
+            currentPage = handleReply.page;
+        }
+
+        const start = (currentPage - 1) * commandsPerPage;
+        const end = Math.min(start + commandsPerPage, totalCommands);
+        const currentCommands = commandList.slice(start, end);
+
+        let msg = `📚 | 𝗠𝗘̂𝗡𝗨 𝗖𝗛𝗨̉ Đ𝗘̂̀: ${selectedGroup.group.toUpperCase()} 📚\n\n`;
+        msg += currentCommands.join("\n");
+        msg += `\n\nTrang: ${currentPage}/${totalPages}`;
+        msg += `\n💡 | 𝗥𝗲𝗽𝗹𝘆 𝘁𝗵𝗲̂𝗺 𝘀𝗼̂́ 𝘁𝗿𝗮𝗻𝗴 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝗶𝗲̂́𝗽.\n🔰 | 𝗗𝘂̀𝗻𝗴 "${prefix}menu all" 𝗵𝗼𝗮̣̆𝗰 "${prefix}menu -a" 𝘅𝗲𝗺 𝘁𝗮̂́𝘁 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵.`;
+
+        return api.sendMessage(msg, threadID, (err, info) => {
             global.client.handleReply.push({
-                type: "cmd_info",
+                type: "cmd_group",
                 name: this.config.name,
                 messageID: info.messageID,
-                content: selectedCommands.map(cmd => cmd.name)
+                content: handleReply.content,
+                page: currentPage,
+                maxPage: totalPages
             });
-        });
+        }, messageID);
     }
 
-    // Nếu người dùng reply số thứ tự của lệnh trong chủ đề
+    // Xử lý reply xem thông tin lệnh
     if (handleReply.type === "cmd_info") {
-        let num = parseInt(event.body.trim());
         if (isNaN(num) || num <= 0 || num > handleReply.content.length) {
-            return api.sendMessage({
-                body: "𝗦𝗼̂́ 𝗯𝗮̣𝗻 𝗰𝗵𝗼̣𝗻 𝗸𝗵𝗼̂𝗻𝗴 𝗻𝗮̆̀𝗺 𝘁𝗿𝗼𝗻𝗴 𝗱𝗮𝗻𝗵 𝘀𝗮́𝗰𝗵, 𝘃𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝘁𝗵𝘂̛̉ 𝗹𝗮̣𝗶!!",
-                attachment: global.khanhdayr.splice(0, 1)
-            }, event.threadID);
+            return api.sendMessage("❌ | 𝗦𝗼̂́ 𝗯𝗮̣𝗻 𝗰𝗵𝗼̣𝗻 𝗸𝗵𝗼̂𝗻𝗴 𝗵𝗼̛̣𝗽 𝗹𝗲̣̂, 𝘃𝘂𝗶 𝗹𝗼̀𝗻𝗴 𝘁𝗵𝘂̛̉ 𝗹𝗮̣𝗶!", threadID, messageID);
         }
 
-        const selectedCmd = handleReply.content[num - 1]; // Lệnh được chọn
-        const { commands } = global.client;
-        const commandConfig = commands.get(selectedCmd)?.config;
+        const selectedCmdName = handleReply.content[num - 1];
+        const command = commands.get(selectedCmdName);
 
-        if (!commandConfig) {
-            return api.sendMessage({
-                body: "𝐋𝐞̣̂𝐧𝐡 𝐊𝐡𝐨̂𝐧𝐠 𝐓𝐨̂̀𝐧 𝐓𝐚̣𝐢!!",
-                attachment: global.khanhdayr.splice(0, 1)
-            }, event.threadID);
+        if (!command) {
+            return api.sendMessage("⚠️ | 𝗟𝗲̣̂𝗻𝗵 𝗸𝗵𝗼̂𝗻𝗴 𝘁𝗼̂̀𝗻 𝘁𝗮̣𝗶 𝗵𝗼𝗮̣̆𝗰 𝗯𝗶̣ 𝗹𝗼̂̃𝗶!", threadID, messageID);
         }
 
-        let msg = `🔹 𝗧𝗲̂𝗻 𝗹𝗲̣̂𝗻𝗵: ${selectedCmd}`;
-        msg += `\n📖 𝗠𝗼̂ 𝘁𝗮̉: ${commandConfig.description}`;
-        msg += `\n🛠 𝗖𝗮́𝗰𝗵 𝗱𝘂̀𝗻𝗴: ${commandConfig.usages || "Không có hướng dẫn"}`;
-        msg += `\n⏳ 𝗧𝗵𝗼̛̀𝗶 𝗴𝗶𝗮𝗻 𝗰𝗵𝗼̛̀: ${commandConfig.cooldowns || 5}s`;
-        msg += `\n🔰 𝗤𝘂𝘆𝗲̂̀𝗻 𝗵𝗮̣𝗻: ${commandConfig.hasPermssion == 0 ? "Người dùng" : commandConfig.hasPermssion == 1 ? "Quản trị viên nhóm" : "Quản trị viên bot"}`;
-        msg += `\n💡 𝗖𝐨𝗱𝗲 𝗯𝘆: ${commandConfig.credits}`;
+        const cmdConfig = command.config;
+        let msg = "===== 📃 𝗠𝗘̂𝗡𝗨 𝗖𝗛𝗜 𝗧𝗜𝗘̂́𝗧 📃 =====\n\n";
+        msg += `» 𝗧𝗲̂𝗻 𝗹𝗲̣̂𝗻𝗵: ${selectedCmdName}\n`;
+        msg += `» 𝗠𝗼̂ 𝘁𝗮̉: ${cmdConfig.description || "Không có mô tả"}\n`;
+        msg += `» 𝗖𝗮́𝗰𝗵 𝗱𝘂̀𝗻𝗴: ${cmdConfig.usages || "Không có hướng dẫn"}\n`;
+        msg += `» 𝗧𝗵𝗼̛̀𝗶 𝗴𝗶𝗮𝗻 𝗰𝗵𝗼̛̀: ${cmdConfig.cooldowns || 3} giây\n`;
+        msg += `» 𝗤𝘂𝘆𝗲̂̀𝗻 𝗵𝗮̣𝗻: ${cmdConfig.hasPermssion === 0 ? "Người dùng" : (cmdConfig.hasPermssion === 1 ? "Quản trị viên nhóm" : "Quản trị viên bot")}\n`;
+        msg += `» 𝗖𝗿𝗲𝗱𝗶𝘁𝘀: ${cmdConfig.credits || "Không có"}\n`;
+        msg += `» 𝗧𝗵𝘂𝗼̣̂𝗰 𝗻𝗵𝗼́𝗺: ${cmdConfig.commandCategory || "Không có"}\n`;
 
-        // Kiểm tra và lấy video nếu có từ global.khanhdayr
-        let attachment = global.khanhdayr?.length > 0 ? global.khanhdayr.splice(0, 1) : null;
-        let msgData = { body: msg };
-
-        if (attachment) msgData.attachment = attachment;  // Đính kèm video nếu có
-
-        return api.sendMessage(msgData, event.threadID);
+        return api.sendMessage(msg, threadID, messageID);
     }
 };
 
 module.exports.run = async function ({ api, event, args }) {
     const { commands } = global.client;
-    const { threadID } = event;
+    const { threadID, messageID } = event;
     const prefix = global.config.PREFIX;
-    let msg = "=====『 𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 』=====\n";
-    
-    // Kiểm tra và lấy video nếu có từ global.khanhdayr
-    let attachment = global.khanhdayr?.length > 0 ? global.khanhdayr.splice(0, 1) : null;
-    let commandList = [];
 
     if (args[0] === "all" || args[0] === "-a") {
-        // Hiển thị tất cả các lệnh
-        msg = "=====『 𝗠𝗘𝗡𝗨 𝗧𝗔̂́𝗧 𝗖𝗔̉ 𝗟𝗘̣̂𝗡𝗛 』=====\n";
-        let count = 0;
+        // Hiển thị tất cả lệnh
+        let commandList = Array.from(commands.keys());
+        const totalCommands = commandList.length;
+        const commandsPerPage = 10;
+        const totalPages = Math.ceil(totalCommands / commandsPerPage);
+        let currentPage = 1;
 
-        commands.forEach((cmd, name) => {
-            msg += `\n${++count}. » ${name}: ${cmd.config.description}`;
-            commandList.push(name);
-        });
+        let msg = "===== 𝗠𝗘̂𝗡𝗨 𝗧𝗔̂́𝗧 𝗖𝗔̉ 𝗖𝗔́𝗖 𝗟𝗘̣̂𝗡𝗛 =====\n\n";
 
-        msg += `\n╭─────╮\n ${commands.size} 𝐥𝐞̣̂𝐧𝐡\n╰─────╯ `;
-        msg += `\n[🧸] 𝗕𝗮̣𝗻 𝗰𝗼́ 𝘁𝗵𝗲̂̉ 𝗱𝘂̀𝗻𝗴 ${prefix}𝗺𝗲𝗻𝘂 𝗮𝗹𝗹 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝘁𝗮̂́𝗍 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵`;
-
-        // Gửi tin nhắn và xử lý reply để người dùng có thể chọn số thứ tự lệnh
-        let msgData = { body: msg };
-        if (attachment) msgData.attachment = attachment;
-
-        return api.sendMessage(msgData, threadID, (error, info) => {
-            global.client.handleReply.push({
-                type: "cmd_info",
-                name: this.config.name,
-                messageID: info.messageID,
-                content: commandList
-            });
-        });
-    } else {
-        let group = [];
-        // Nhóm các lệnh theo chủ đề
-        commands.forEach(cmd => {
-            let category = cmd.config.commandCategory.toLowerCase();
-            let cmdName = cmd.config.name;
-
-            let groupObj = group.find(item => item.group === category);
-            if (!groupObj) {
-                group.push({ group: category, cmds: [cmdName] });
-            } else {
-                groupObj.cmds.push(cmdName);
+        for (let i = 0; i < totalCommands; i++) {
+            const cmdName = commandList[i];
+            const cmd = commands.get(cmdName);
+            if (cmd) {
+                msg += `» ${prefix}${cmdName}: ${cmd.config.description}\n`;
             }
+        }
+
+        msg += `\nTrang: ${currentPage}/${totalPages}`;
+        msg += `\n💡 | 𝗥𝗲𝗽𝗹𝘆 𝘁𝗵𝗲̂𝗺 𝘀𝗼̂́ 𝘁𝗿𝗮𝗻𝗴 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝗶𝗲̂́𝗽.`;
+
+        return api.sendMessage(msg, threadID, messageID);
+    } else {
+        // Hiển thị theo chủ đề
+        let groups = {};
+        commands.forEach(cmd => {
+            const category = cmd.config.commandCategory || "Khác";
+            if (!groups[category]) {
+                groups[category] = [];
+            }
+            groups[category].push(cmd.config.name);
         });
 
-        // Hiển thị các chủ đề
-        group.forEach((groupItem, index) => {
-            msg += `\n${index + 1}. » ${groupItem.group.toUpperCase()} «`;
+        let groupList = Object.keys(groups);
+        let msg = "===== 𝗠𝗘̂𝗡𝗨 𝗖𝗔́𝗖 𝗖𝗛𝗨̉ Đ𝗘̂̀ =====\n\n";
+        groupList.forEach((group, index) => {
+            msg += `${index + 1}. » ${group}\n`;
         });
 
-        msg += `\n\n[🧸] 𝗕𝗮̣𝗻 𝗰𝗼́ 𝘁𝗵𝗲̂̉ 𝗱𝘂̀𝗻𝗴 ${prefix}𝗺𝗲𝗻𝘂 𝗮𝗹𝗹 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝘁𝗮̂́𝗍 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵`;
-        msg += `\n╭─────╮\n ${commands.size} 𝐥𝐞̣̂𝐧𝐡\n╰─────╯ `;
-        msg += `\n[💓] 𝐇𝐚̃𝐲 𝐫𝐞𝐩𝐥𝐲 (𝐩𝐡𝐚̉𝐧 𝐡𝐨̂̀𝐢) 𝐒𝐓𝐓 𝐜𝐮̉𝐚 𝐜𝐡𝐮̉ đ𝐞̂̀ đ𝐞̂̉ 𝐱𝐞𝐦 𝐜𝐚́𝐜 𝐥𝐞̣̂𝐧𝐡 𝐭𝐫𝐨𝐧𝐠 𝐜𝐡𝐮̉ đ𝐞̂̀ 𝐧𝐚̀𝐨`;
+        msg += `\n🔰 | 𝗥𝗲𝗽𝗹𝘆 𝘀𝗼̂́ 𝘁𝗵𝘂̛́ 𝘁𝘂̛̣ 𝗰𝘂̉𝗮 𝗰𝗵𝘂̉ đ𝗲̂̀ đ𝗲̂̉ 𝘅𝗲𝗺 𝗰𝗮́𝗰 𝗹𝗲̣̂𝗻𝗵.\n💡 | 𝗗𝘂̀𝗻𝗴 "${prefix}menu all" 𝗵𝗼𝗮̣̆𝗰 "${prefix}menu -a" 𝘅𝗲𝗺 𝘁𝗮̂́𝘁 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵.`;
 
-        // Gửi tin nhắn và xử lý reply cho người dùng chọn nhóm chủ đề
-        let msgData = { body: msg };
-        if (attachment) msgData.attachment = attachment;
-
-        return api.sendMessage(msgData, threadID, (error, info) => {
+        return api.sendMessage(msg, threadID, (error, info) => {
             global.client.handleReply.push({
                 type: "cmd_group",
                 name: this.config.name,
                 messageID: info.messageID,
-                content: group
+                content: groupList.map(groupName => ({
+                    group: groupName,
+                    cmds: groups[groupName]
+                }))
             });
-        });
+        }, messageID);
     }
 };
