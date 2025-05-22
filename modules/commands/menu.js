@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "menu",
+    name: "menu101",
     version: "3.0.0",
     hasPermssion: 0,
     credits: "hphong",

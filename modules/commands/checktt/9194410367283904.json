@@ -190,22 +190,22 @@
     "day": [
         {
             "id": "100041436674329",
-            "count": 57,
+            "count": 0,
             "name": "𝙉𝙜𝙪𝙮𝙚𝙣 𝙃𝙤𝙖𝙣𝙜 𝙃𝙖𝙞 𝙉𝙖𝙢"
         },
         {
             "id": "100054892668998",
-            "count": 22,
+            "count": 0,
             "name": "Khanh Phuong"
         },
         {
             "id": "100093051642489",
-            "count": 3,
+            "count": 0,
             "name": "Đỗ Hải Phong ToT"
         },
         {
             "id": "100065603238150",
-            "count": 17,
+            "count": 0,
             "name": "Mai Trang"
         },
         {
@@ -215,7 +215,7 @@
         },
         {
             "id": "100037678063085",
-            "count": 57,
+            "count": 0,
             "name": "Bui Quynh Nga"
         },
         {
@@ -225,7 +225,7 @@
         },
         {
             "id": "100077013743998",
-            "count": 2,
+            "count": 0,
             "name": "Tâm Lê"
         },
         {
@@ -240,17 +240,17 @@
         },
         {
             "id": "100009365449335",
-            "count": 12,
+            "count": 0,
             "name": "Hoàng"
         },
         {
             "id": "100083210059631",
-            "count": 18,
+            "count": 0,
             "name": "Phwng Nguyn"
         },
         {
             "id": "61564656096171",
-            "count": 1,
+            "count": 0,
             "name": "Tr Kienn"
         },
         {
@@ -260,40 +260,48 @@
         },
         {
             "id": "100044323351913",
-            "count": 116,
+            "count": 0,
             "name": "Hoang Ly"
         },
         {
             "id": "61555576740148",
-            "count": 1
+            "count": 0,
+            "name": "Lê Hiền"
         },
         {
             "id": "100094147835054",
-            "count": 14
+            "count": 0,
+            "name": "Vũ Dương Khánh Linh"
         },
         {
             "id": "61557614450511",
-            "count": 9
+            "count": 0,
+            "name": "Chip Chip"
         },
         {
             "id": "100094336184672",
-            "count": 58
+            "count": 0,
+            "name": "Hồ Zuy"
         },
         {
             "id": "100081591108348",
-            "count": 34
+            "count": 0,
+            "name": "Nguyễn Hùng"
         },
         {
             "id": "100078799523757",
-            "count": 2
+            "count": 0,
+            "name": "Thanh Hiền"
         },
         {
             "id": "100049082952350",
-            "count": 9
+            "count": 0,
+            "name": "Nam Luu"
         },
         {
             "id": "100040782710054",
-            "count": 2
+            "count": 0,
+            "name": "Thu Trang"
         }
     ],
     "time": 6

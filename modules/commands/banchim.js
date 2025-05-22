@@ -1,4 +1,4 @@
-cconst path = require("path");
+const path = require("path");
 const { mkdirSync, writeFileSync, existsSync, createReadStream, readdirSync } = require("fs-extra")
 const axios = require("axios")
 

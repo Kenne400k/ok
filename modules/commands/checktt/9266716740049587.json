@@ -22,11 +22,13 @@
     "day": [
         {
             "id": "61562344168985",
-            "count": 35
+            "count": 0,
+            "name": "Sea Tea"
         },
         {
             "id": "100047128875560",
-            "count": 29
+            "count": 0,
+            "name": "Nguyễn Phát"
         }
     ],
     "time": 6

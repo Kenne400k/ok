@@ -1,0 +1,35 @@
+{
+    "100067191000400": [
+        {
+            "type": "message",
+            "name": "Quốc Bình",
+            "message": "",
+            "time": "16/05/2025 15:23:02",
+            "attachment": [
+                {
+                    "type": "video",
+                    "filename": "video-21adcd96-b048-4954-9b1d-ab75d3ab7a92-1747383781.mp4",
+                    "ID": "1190837392739123",
+                    "previewUrl": "https://scontent.xx.fbcdn.net/v/t15.3394-10/497639668_29447880558192669_5581169989054401044_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&ccb=1-7&_nc_sid=56d81d&_nc_ohc=MypuJQdRs4IQ7kNvwGYEHVh&_nc_oc=AdkZwk7Fcg6raFZRpRynATUsJtq9WGGG3k3xO301aFnKKiJrRuJ0wtq_DNj9PLfpsG4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=4RDP2nTrnPhs_KiMhZwc_g&oh=03_Q7cD2QHY3bdMizADKODaEUKSUX3Jd177BojoXH37asLsSsy-6w&oe=682CBFD5",
+                    "previewWidth": 223,
+                    "previewHeight": 640,
+                    "url": "https://scontent.xx.fbcdn.net/v/t42.3356-2/497163774_24591845117071428_7680937231297925997_n.mp4?_nc_cat=103&_nc_cb=47395efc-686078dc&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=P5Y9825XPykQ7kNvwFyJK-j&_nc_oc=AdmaIPTdqpLCbxfAZFCGzjaRKo_BfAMRCfp_B48IbWqCwSWqtAW5Ka_Tmteia2cus2Q&_nc_zt=28&_nc_ht=scontent.xx&_nc_gid=4RDP2nTrnPhs_KiMhZwc_g&oh=03_Q7cD2QEN5l4qRdkDmHl3aLobqQgNBsIEezZ5lbtJEPcZrp6gzg&oe=6828BC17&dl=1",
+                    "width": 356,
+                    "height": 1024,
+                    "duration": 10000,
+                    "videoType": "file_attachment",
+                    "thumbnailUrl": "https://scontent.xx.fbcdn.net/v/t15.3394-10/497639668_29447880558192669_5581169989054401044_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=106&ccb=1-7&_nc_sid=56d81d&_nc_ohc=MypuJQdRs4IQ7kNvwGYEHVh&_nc_oc=AdkZwk7Fcg6raFZRpRynATUsJtq9WGGG3k3xO301aFnKKiJrRuJ0wtq_DNj9PLfpsG4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=4RDP2nTrnPhs_KiMhZwc_g&oh=03_Q7cD2QHY3bdMizADKODaEUKSUX3Jd177BojoXH37asLsSsy-6w&oe=682CBFD5"
+                }
+            ]
+        }
+    ],
+    "100034826327568": [
+        {
+            "type": "message",
+            "name": "Cương Đình",
+            "message": "Dâm ẻ",
+            "time": "16/05/2025 15:23:09",
+            "attachment": []
+        }
+    ]
+}

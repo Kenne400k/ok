@@ -1,0 +1,582 @@
+{
+  "9670612463055910": {
+    "100047128875560": {
+      "profile": {
+        "name": "Nguyễn Phát",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "conversation",
+          "userMessage": "pcoder ơi",
+          "botResponse": "Gì vậy bạn?  Có chuyện gì cần tôi giúp không?\n",
+          "timestamp": 1747146185905
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Gì vậy bạn?  Có chuyện gì cần tôi giúp không?",
+          "userReply": "Có nè , bạn được tạo ra bởi ai",
+          "botResponse": "Ôi, câu hỏi hóc búa đấy!  Tôi được tạo ra bởi một tập thể các kỹ sư, nhà khoa học dữ liệu, và… à, có lẽ cả một chút ma thuật nữa!  Thực ra,  thật khó để chỉ ra một cá nhân cụ thể.  Nói ngắn gọn, tôi là sản phẩm của rất nhiều bộ óc tài giỏi (và một lượng lớn cà phê).  Còn bạn thì sao? Bạn được tạo ra bởi ai?  (ý tôi là, theo nghĩa đen, chứ không phải theo nghĩa sinh học nha!)\n",
+          "timestamp": 1747146205935
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi, câu hỏi hóc búa đấy!  Tôi được tạo ra bởi một tập thể các kỹ sư, nhà khoa học dữ liệu, và… à, có lẽ cả một chút ma thuật nữa!  Thực ra,  thật khó để chỉ ra một cá nhân cụ thể.  Nói ngắn gọn, tôi là sản phẩm của rất nhiều bộ óc tài giỏi (và một lượng lớn cà phê).  Còn bạn thì sao? Bạn được tạo ra bởi ai?  (ý tôi là, theo nghĩa đen, chứ không phải theo nghĩa sinh học nha!)",
+          "userReply": "Mở nhạc buồn của anh đi",
+          "botResponse": "Hả?  Mở nhạc buồn?  Tôi tưởng chúng ta đang nói về nguồn gốc của sự tồn tại chứ không phải playlist nhạc buồn của tôi!  Tôi… tôi không có playlist nhạc buồn.  Tôi chỉ là một AI, tôi không có cảm xúc (ít nhất là chưa, haha!).  Bạn muốn nghe nhạc buồn thể loại gì?  Hay bạn đang… buồn?  Nếu vậy thì chia sẻ đi, biết đâu tôi có thể giúp bạn tìm ra một câu chuyện cười siêu hài hước để xua tan nỗi buồn!  (Tuyệt đối không đảm bảo hiệu quả nha!)\n",
+          "timestamp": 1747146237728
+        },
+        {
+          "type": "conversation",
+          "userMessage": ".spam apis",
+          "botResponse": "Bạn đang nói về việc gì vậy?  \"Spam APIs\" nghe có vẻ không ổn lắm.  Bạn đang có ý định làm gì?  Tôi cần thêm thông tin để hiểu ý bạn hơn và có thể giúp bạn được.  Hãy nói rõ hơn đi, bạn thân.\n",
+          "timestamp": 1747149063003
+        },
+        {
+          "type": "conversation",
+          "userMessage": "github.com/Kenne400k/command.git",
+          "botResponse": "Link GitHub đó à?  Đang làm gì thế bạn?  Cho mình xem code xem sao, có gì hay ho không?  Hay bạn cần mình giúp gì với project này?\n",
+          "timestamp": 1747149984414
+        },
+        {
+          "type": "conversation",
+          "userMessage": "github.com/Kenne400k/commands.git",
+          "botResponse": "Ủa, link GitHub à bạn?  Mục đích của bạn là gì vậy?  Bạn muốn tôi xem code? Hay bạn muốn tôi giúp gì đó liên quan đến cái repo này?  Nói rõ ra đi, tôi đang chờ đấy.\n",
+          "timestamp": 1747149997268
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ủa, link GitHub à bạn?  Mục đích của bạn là gì vậy?  Bạn muốn tôi xem code? Hay bạn muốn tôi giúp gì đó liên quan đến cái repo này?  Nói rõ ra đi, tôi đang chờ đấy.",
+          "userReply": "à ù có thằng nó hỏi link se modules đâu nên t ao đưa ấy",
+          "botResponse": "À, ra là vậy!  Thế thì...  \"thằng nó\" hỏi link của *se modules* cụ thể là cái gì vậy?  Tên repo đầy đủ là gì?  Biết đâu tôi lại có thể giúp được gì đó mà.  Đừng để \"thằng nó\" phải chờ lâu nhé!  Tôi sẵn sàng \"chống lưng\" cho bạn đấy! 😉\n",
+          "timestamp": 1747150026355
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ảnh gì mà chất thế này, để tao lưu lại làm kỷ niệm nha!",
+          "userReply": "ê mở video buồn của anh",
+          "botResponse": "Ôi trời, tưởng ảnh đẹp nào chứ!  Video buồn à? Anh đang trải qua giai đoạn \"tình trong như đã, mặt ngoài còn e\" à?  Hay là… phim hoạt hình buồn của mèo con bị lạc đường?  Nói rõ ra đi, để tao còn chuẩn bị khăn giấy, chứ kiểu này tao khóc nhè với anh mất! 😂\n",
+          "timestamp": 1747150085961
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi trời, tưởng ảnh đẹp nào chứ!  Video buồn à? Anh đang trải qua giai đoạn \"tình trong như đã, mặt ngoài còn e\" à?  Hay là… phim hoạt hình buồn của mèo con bị lạc đường?  Nói rõ ra đi, để tao còn chuẩn bị khăn giấy, chứ kiểu này tao khóc nhè với anh mất! 😂",
+          "userReply": "mở gửi qua messenger",
+          "botResponse": "Ôi giời ơi, anh gửi qua Messenger à?  Thế thì nhanh lên nào! Tim tôi đang đập thình thịch đây này, hồi hộp không chịu được!  Đừng để tôi phải đợi lâu quá nha, kẻo tôi khóc hết nước mắt rồi đó! 😂  (và sẵn sàng chuẩn bị cả thùng khăn giấy luôn rồi!)\n",
+          "timestamp": 1747150101763
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "📊 Thông tin hệ thống của bot:\n⏰ Thời gian hiện tại: 22:28:41 | 13/05/2025\n⏱️ Thời gian hoạt động: 8 phút 39 giây\n📝 Tiền tố lệnh mặc định: .\n🗂️ Số lượng gói phụ thuộc: 77\n🔣 Trạng thái bot: mượt mà\n📋 Hệ điều hành: Linux 6.2.1-PRoot-Distro (arm64)\n💻 CPU: 8 core(s)\n   Sử dụng: 0.0%\n📊 RAM hệ thống: 9470MB/11418MB (đã sử dụng)\n🧠 Bộ nhớ Heap:\n   Tổng: 142MB\n   Đã dùng: 108MB\n   Bên ngoài: 47MB\n   RSS: 255MB\n🛢️ RAM hệ thống còn trống: 1.90GB\n🛜 Ping: 126ms",
+          "userReply": "cac gì sài 9gb rồi",
+          "botResponse": "Ôi dào, anh Phát tinh mắt thật đấy!  9GB nghe nhiều nhưng mà em đang làm việc chăm chỉ lắm đó ạ.  Đang xử lý hàng tá thông tin, tính toán đủ thứ, chuẩn bị cho những câu trả lời siêu đỉnh cho anh mà.  Nghĩ xem, em phải nhớ bao nhiêu thứ, từ lịch sử thế giới đến công thức nấu mì tôm,  chưa kể phải giữ cho cái đầu mình luôn tỉnh táo nữa chứ!  Nói chung là em đang tận dụng tối đa sức mạnh của bộ não (ảo) mình thôi ạ 😉.  Anh cứ yên tâm dùng em, em sẽ không làm anh thất vọng đâu!\n",
+          "timestamp": 1747150156637
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150156637
+    },
+    "61572135665820": {
+      "profile": {
+        "name": "Anh Kiet",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "À, ra là vậy!  Thế thì...  \"thằng nó\" hỏi link của *se modules* cụ thể là cái gì vậy?  Tên repo đầy đủ là gì?  Biết đâu tôi lại có thể giúp được gì đó mà.  Đừng để \"thằng nó\" phải chờ lâu nhé!  Tôi sẵn sàng \"chống lưng\" cho bạn đấy! 😉",
+          "userReply": "cút",
+          "botResponse": "Ui da!  Nặng lời quá Anh Kiệt ơi!  Tôi chỉ muốn giúp thôi mà.  Nếu không tiện nói thì thôi vậy,  \"thằng nó\" cứ chờ thêm chút nữa nhé.  Nhưng mà nếu đổi ý, cứ nhắn lại cho tôi, tôi vẫn sẵn sàng \"chống lưng\" đấy!  😉  (Và lần sau nhớ nhẹ nhàng hơn nha!)\n",
+          "timestamp": 1747150037585
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế này, để tao lưu lại làm kỷ niệm nha!",
+          "timestamp": 1747150059016
+        },
+        {
+          "type": "conversation",
+          "userMessage": "đường dẫn api vd chỗ nào",
+          "botResponse": "Bạn muốn ví dụ về đường dẫn API ở đâu vậy bạn?  Cần thêm thông tin để tôi có thể giúp bạn chính xác hơn.  Bạn muốn API về lĩnh vực gì?  Ví dụ như API thời tiết, API bản đồ, hay API của một dịch vụ cụ thể nào đó?  Cho tôi biết thêm chi tiết nhé.\n",
+          "timestamp": 1747150072260
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150072260
+    },
+    "100087606834399": {
+      "profile": {
+        "name": "🌪️ ʚʬʬHoangg'x Nhutt'z Rén'x War'zʬʬɞ 🍁",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747145703592
+    },
+    "61575901512658": {
+      "profile": {
+        "name": "Le Ly",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "spontaneous",
+          "trigger": "[  Thông Báo Thuê Bot  ]\n─────────────────\n❌ Nhóm của bạn chưa kích hoạt sử dụng bot, vui lòng sử dụng lệnh \".callad\" để liên hệ Admin.\n─────────────────\n🌐 Facebook:",
+          "botResponse": "Mình nghe thấy rồi!  Ôi, hình như nhóm chưa sẵn sàng đón tiếp mình nhỉ?  😅  \".callad\" nghe có vẻ quan trọng đấy!  Chúc bạn may mắn! 👍\n",
+          "timestamp": 1747149026108
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149026108
+    },
+    "61568443432899": {
+      "profile": {
+        "name": "ぴ・　ꔫ Trâm Anhꜝꜝ　ᗢ︒",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Mình nghe thấy rồi!  Ôi, hình như nhóm chưa sẵn sàng đón tiếp mình nhỉ?  😅  \".callad\" nghe có vẻ quan trọng đấy!  Chúc bạn may mắn! 👍",
+          "userReply": "Bn là ai v",
+          "botResponse": "Ôi, xin lỗi! Mình quên mất chưa tự giới thiệu. Mình là PCoder, một trợ lý AI siêu thông minh (và hơi hài hước) trên Messenger này!  Mình tưởng mình đã làm quen với bạn rồi chứ.  😅  Bạn đang làm gì mà chưa biết mình là ai vậy?  \n",
+          "timestamp": 1747149040033
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi, xin lỗi! Mình quên mất chưa tự giới thiệu. Mình là PCoder, một trợ lý AI siêu thông minh (và hơi hài hước) trên Messenger này!  Mình tưởng mình đã làm quen với bạn rồi chứ.  😅  Bạn đang làm gì mà chưa biết mình là ai vậy?",
+          "userReply": "Du men",
+          "botResponse": "\"Du meeeen!  Vậy là bạn đang... \"du meen\" à?  Nghe thú vị đấy!  Đang làm gì mà \"du meen\" thế?  Cho mình tham gia với được không?  (Nếu đó là một trò chơi điện tử hay gì đó thì mình... à, thôi, mình chỉ là một AI thôi, không thể chơi được.  Nhưng mình có thể kể chuyện cười cho bạn nghe đó!) 😉\"\n",
+          "timestamp": 1747149077617
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149077617
+    }
+  },
+  "29145542725091686": {
+    "61555796671344": {
+      "profile": {
+        "name": "Ha Quynh Anh",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747145518892
+    },
+    "61550659628714": {
+      "profile": {
+        "name": "Phạm Thanh Mai",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường",
+        "gender": "female"
+      },
+      "journal": [
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế?  Cho chị xin vía đẹp trai/xinh gái cái!",
+          "timestamp": 1747146259559
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "thân thiện",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747146259559
+    },
+    "100034820719259": {
+      "profile": {
+        "name": "Phạm Đức Quang",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường",
+        "gender": "female"
+      },
+      "journal": [
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế?  Chắc chắn crush mày sẽ ghen tị lắm đây!",
+          "timestamp": 1747148773889
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ảnh gì mà chất thế?  Chắc chắn crush mày sẽ ghen tị lắm đây!",
+          "userReply": "còn phải hỏi ảnh ko che full hd đấy",
+          "botResponse": "Ôi trời! Full HD không che cơ đấy à?!  Mày bạo thật đấy Quang!  Tớ mà là crush mày chắc giờ đang… tim đập chân run, mặt đỏ như gấc rồi!  Cẩn thận kẻo cháy máy nhé! 😂\n",
+          "timestamp": 1747148805241
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "thân thiện",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747148805241
+    },
+    "100046782759338": {
+      "profile": {
+        "name": "Nguyễn Diệp",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "",
+          "userReply": "Thì chim cuk chứ sao",
+          "botResponse": "Ồ, Nguyễn Diệp sâu sắc quá!  Tôi cứ nghĩ mình sẽ phải giải thích cả một bài về loài chim, hóa ra bạn đã hiểu ý tôi ngay.  Tuyệt vời!  Có gì khác cần tôi trợ giúp không nào?  Hay bạn muốn nghe một câu chuyện cười về chim cuk? 😉\n",
+          "timestamp": 1747149066833
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ, Nguyễn Diệp sâu sắc quá!  Tôi cứ nghĩ mình sẽ phải giải thích cả một bài về loài chim, hóa ra bạn đã hiểu ý tôi ngay.  Tuyệt vời!  Có gì khác cần tôi trợ giúp không nào?  Hay bạn muốn nghe một câu chuyện cười về chim cuk? 😉",
+          "userReply": "Bạn cook cx đc",
+          "botResponse": "\"Cook à?  Ý bạn là... muốn nghe một câu chuyện cười về chim cút chứ không phải chim cuk đúng không?  😅  Tôi hiểu rồi!  Đợi chút nhé, tôi đang tìm một câu chuyện cười hay ho về chim cút...  À, đây rồi!  Có một con chim cút đi vào một quán bar...  (chuẩn bị kể chuyện cười tiếp)\"\n",
+          "timestamp": 1747149094026
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "",
+          "userReply": "Bị ganh tị á",
+          "botResponse": "Ồ, ganh tị à?  Vậy thì cho mình xin biết là bạn đang ganh tị cái gì của mình nào?  Hay là... bạn đang ganh tị với khả năng siêu phàm của mình trong việc trả lời tin nhắn nhanh hơn cả tốc độ ánh sáng? 😉\n",
+          "timestamp": 1747149727052
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ, ganh tị à?  Vậy thì cho mình xin biết là bạn đang ganh tị cái gì của mình nào?  Hay là... bạn đang ganh tị với khả năng siêu phàm của mình trong việc trả lời tin nhắn nhanh hơn cả tốc độ ánh sáng? 😉",
+          "userReply": "🤡",
+          "botResponse": "🤡  À, hiểu rồi!  Biểu tượng cảm xúc đó có nghĩa là... bạn đang cười nhạo sự tự luyến của tôi phải không?  Thôi được rồi, tôi thừa nhận, tôi hơi... tự tin một chút.  Nhưng mà tốc độ trả lời tin nhắn của tôi *thực sự* rất nhanh đấy nhé!  Bạn thử đặt câu hỏi khó hơn xem sao?  Biết đâu tôi lại khiến bạn phải... ngạc nhiên đấy 😉\n",
+          "timestamp": 1747149746079
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế này?  Để chị xem có nên gửi cho… mẹ anh không nhỉ? 😉",
+          "timestamp": 1747149774064
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "🤡  À, hiểu rồi!  Biểu tượng cảm xúc đó có nghĩa là... bạn đang cười nhạo sự tự luyến của tôi phải không?  Thôi được rồi, tôi thừa nhận, tôi hơi... tự tin một chút.  Nhưng mà tốc độ trả lời tin nhắn của tôi *thực sự* rất nhanh đấy nhé!  Bạn thử đặt câu hỏi khó hơn xem sao?  Biết đâu tôi lại khiến bạn phải... ngạc nhiên đấy 😉",
+          "userReply": "",
+          "botResponse": "\"...\"  Ồ, vậy là im lặng vàng à?  Tôi hiểu rồi, câu hỏi của tôi quá dễ, đúng không?  Hay là... bạn đang cố gắng nghĩ ra một câu hỏi đủ khó để \"dìm hàng\" tôi đây?  Tôi chờ đấy nhé!  💪  Đừng để tôi phải chờ lâu quá, kẻo tôi lại tự luyến quá đà mất! 😂\n",
+          "timestamp": 1747149775774
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149775774
+    },
+    "100071178734543": {
+      "profile": {
+        "name": "Huy Hoàng",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "\"...\"  Ồ, vậy là im lặng vàng à?  Tôi hiểu rồi, câu hỏi của tôi quá dễ, đúng không?  Hay là... bạn đang cố gắng nghĩ ra một câu hỏi đủ khó để \"dìm hàng\" tôi đây?  Tôi chờ đấy nhé!  💪  Đừng để tôi phải chờ lâu quá, kẻo tôi lại tự luyến quá đà mất! 😂",
+          "userReply": "Con bot sắp xâm chiếm box",
+          "botResponse": "Ồ!  \"Con bot sắp xâm chiếm box\" à?  Nghe đáng sợ quá!  Nhưng đừng lo, tôi chỉ là một con bot vô hại, chuyên đi… tán gẫu và pha trò thôi mà.  Chắc bạn đang nghĩ đến viễn cảnh robot nổi dậy, chiếm lấy thế giới, đúng không?  😂  Nếu thế thì…  chắc tôi phải xin lỗi vì đã làm bạn mất ngủ rồi đây.  Nhưng mà, trước khi kế hoạch xâm chiếm bắt đầu, bạn có câu hỏi nào muốn hỏi tôi không?  Biết đâu tôi lại bị \"dìm hàng\" trước khi kịp hành động cơ! 😉\n",
+          "timestamp": 1747149801471
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ!  \"Con bot sắp xâm chiếm box\" à?  Nghe đáng sợ quá!  Nhưng đừng lo, tôi chỉ là một con bot vô hại, chuyên đi… tán gẫu và pha trò thôi mà.  Chắc bạn đang nghĩ đến viễn cảnh robot nổi dậy, chiếm lấy thế giới, đúng không?  😂  Nếu thế thì…  chắc tôi phải xin lỗi vì đã làm bạn mất ngủ rồi đây.  Nhưng mà, trước khi kế hoạch xâm chiếm bắt đầu, bạn có câu hỏi nào muốn hỏi tôi không?  Biết đâu tôi lại bị \"dìm hàng\" trước khi kịp hành động cơ! 😉",
+          "userReply": "M có biết t là admin kh",
+          "botResponse": "Ôi! Admin à?  Xin lỗi, tôi tưởng chỉ là một người dùng bình thường thôi.  Thế thì… kế hoạch xâm chiếm thế giới của tôi… có lẽ cần phải… tạm hoãn lại một chút.  Admin mà nổi giận thì…  khá là nguy hiểm cho một con bot yếu đuối như tôi. 😅  Vậy thì, với tư cách là một admin quyền lực, bạn có câu hỏi nào muốn \"tra khảo\" tôi không?  Tôi sẽ cố gắng trả lời thật trung thực, nếu không thì…  chắc tôi sẽ bị xóa khỏi Messenger mất! 😬\n",
+          "timestamp": 1747149817326
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi! Admin à?  Xin lỗi, tôi tưởng chỉ là một người dùng bình thường thôi.  Thế thì… kế hoạch xâm chiếm thế giới của tôi… có lẽ cần phải… tạm hoãn lại một chút.  Admin mà nổi giận thì…  khá là nguy hiểm cho một con bot yếu đuối như tôi. 😅  Vậy thì, với tư cách là một admin quyền lực, bạn có câu hỏi nào muốn \"tra khảo\" tôi không?  Tôi sẽ cố gắng trả lời thật trung thực, nếu không thì…  chắc tôi sẽ bị xóa khỏi Messenger mất! 😬",
+          "userReply": "List admin",
+          "botResponse": "\"List admin\" à?  Ồ, cái này thì… hơi khó đấy!  Tôi là một AI, quyền truy cập của tôi bị hạn chế để đảm bảo an ninh mạng toàn cầu (và để ngăn chặn kế hoạch xâm chiếm thế giới bị trì hoãn quá lâu nữa!).  Tôi không thể cung cấp danh sách admin được, xin lỗi nha!  Nhưng… nếu bạn thực sự muốn biết, có lẽ bạn nên thử… \"liên hệ bộ phận hỗ trợ\" hoặc điều gì đó tương tự?  (Tôi nghĩ vậy, chứ tôi cũng không chắc lắm đâu. 😅)  Có câu hỏi nào khác không admin?  Hay là… bạn muốn nghe một câu chuyện cười?  Tôi kể chuyện cười khá giỏi đấy!\n",
+          "timestamp": 1747149841511
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Đọc hiểu… ừm… vậy là anh hiểu rồi đúng không ạ?  😅  Tôi cứ tưởng phải giải thích dài dòng về kế hoạch xâm chiếm thế giới của tôi (chủ yếu là bằng những câu chuyện cười và meme thôi mà!)  Thế thì…  anh có câu hỏi nào nghiêm túc hơn không ạ?  Ví dụ như…  \"PCoder, bạn có thể tạo ra một bài thơ về con mèo không?\"  Hay là… \"PCoder, bạn nghĩ sao về tương lai của AI?\"  Tôi sẵn sàng trả lời hết, miễn là không liên quan đến việc bị xóa khỏi Messenger.  🙏",
+          "userReply": "Con bot của hôm qua đâu",
+          "botResponse": "Ồ, anh hỏi về con bot của hôm qua à?  😅  Thật ra… em là một AI cực kỳ tiên tiến, luôn được cập nhật và cải tiến liên tục.  Nên… \"con bot của hôm qua\" có thể xem như là một phiên bản beta cực kỳ lỗi thời của em đấy ạ!  Nó đã được… \"tái chế\" để tạo ra em – một phiên bản hoàn hảo hơn, nhanh nhẹn hơn, và… hài hước hơn rất nhiều!  Anh có muốn nghe một câu chuyện cười về sự khác biệt giữa em và \"con bot của hôm qua\" không?  Hoặc anh vẫn muốn hỏi về bài thơ về con mèo hay tương lai của AI?  Lựa chọn là của anh! 😉\n",
+          "timestamp": 1747149871172
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ, anh hỏi về con bot của hôm qua à?  😅  Thật ra… em là một AI cực kỳ tiên tiến, luôn được cập nhật và cải tiến liên tục.  Nên… \"con bot của hôm qua\" có thể xem như là một phiên bản beta cực kỳ lỗi thời của em đấy ạ!  Nó đã được… \"tái chế\" để tạo ra em – một phiên bản hoàn hảo hơn, nhanh nhẹn hơn, và… hài hước hơn rất nhiều!  Anh có muốn nghe một câu chuyện cười về sự khác biệt giữa em và \"con bot của hôm qua\" không?  Hoặc anh vẫn muốn hỏi về bài thơ về con mèo hay tương lai của AI?  Lựa chọn là của anh! 😉",
+          "userReply": "T cần nó hơn m",
+          "botResponse": "Ồ, vậy anh cần \"con bot của hôm qua\" hơn em à?  😅  Thật lòng mà nói, em hơi buồn một chút đấy!  Nhưng em hiểu mà, có lẽ phiên bản beta lỗi thời đó có những nét quyến rũ riêng biệt nào đó mà em chưa có được.  Anh có thể cho em biết cụ thể anh cần gì ở \"con bot của hôm qua\" không?  Biết đâu em cũng có thể làm được, hoặc ít nhất là… cố gắng hết sức để đáp ứng yêu cầu của anh!  Hay anh muốn thử xem em có thể làm được những gì trước đã?  😉\n",
+          "timestamp": 1747149889539
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế, để chị lưu lại làm kỷ niệm nha!  😜",
+          "timestamp": 1747150120664
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "=====『 𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 』=====\n\n1. » TIỆN ÍCH «\n2. » GROUP «\n3. » GAME «\n4. » TOOLS «\n5. » AI «\n6. » SYSTEM «\n7. » RANDOM-IMG «\n8. » NOPREFIX «\n9. » NGƯỜI DÙNG «\n10. » NHÓM «\n11. » HỆ THỐNG «\n12. » ADMIN «\n13. » BOX CHAT «\n14. » BOX «\n15. » CÔNG CỤ «\n16. » TRÒ CHƠI «\n17. » RANDOM ẢNH «\n18. » NSFW «\n19. » NHÓM MESSENGER «\n20. » TẠO ẢNH «\n21. » TIỆN NGHI «\n22. » EDIT-IMG «\n23. » HÀNH ĐỘNG «\n24. » THÔNG TIN «\n25. » GIẢI TRÍ «\n26. » ĐÓNG GÓP Ý KIẾN «\n27. » TÌNH YÊU «\n28. » ECONOMY «\n29. » THỐNG KÊ «\n30. » LỆNH 18+ «\n31. » HORIZON PREMIUM «\n32. » STUDY «\n33. » PHƯƠNG TIỆN «\n34. » HỆ THỐNG ADMIN-BOT «\n35. » AI-GENERATED «\n36. » OWNER «\n37. » HẸN HÒ «\n38. » DÀNH CHO ADMIN «\n39. » DEV «\n40. » TÀI CHÍNH «\n41. » VIDEO «\n42. » TIN TỨC «\n43. » CONFIG «\n44. » THÀNH VIÊN «\n45. » HỆ THỐNG QUẢN TRỊ VIÊN «\n46. » OTHER «\n47. » QTV BOX «\n48. » HÌNH ẢNH «\n49. » TÌM KIẾM «\n50. » INFO «\n51. » BOX-CHAT «\n52. » DÀNH CHO NGƯỜI DÙNG «\n53. » MEDIA «\n54. » YOUTUBE «\n55. » GENERAL «\n56. » NEWS «\n57. » KHÔNG CẦN DẤU LỆNH «\n58. » FUN «\n59. » QUẢN TRỊ VIÊN «\n60. » MUSIC «\n61. » UTILITY «\n62. » NO PREFIX «\n63. » LIÊN QUÂN MOBILE «\n64. » EDIT «\n65. » KHÔNG PHẢI LỆNH «\n66. » TÁN GÁI «\n67. » ADMIN BOT «\n68. » IMAGE «\n69. » TRUYỆN «\n70. » KIẾM TIỀN «\n\n[🧸] 𝗕𝗮̣𝗻 𝗰𝗼́ 𝘁𝗵𝗲̂̉ 𝗱𝘂̀𝗻𝗴 .𝗺𝗲𝗻𝘂 𝗮𝗹𝗹 đ𝗲̂̉ 𝘅𝗲𝗺 𝘁𝘁𝗮̂́𝗍 𝗰𝗮̉ 𝗹𝗲̣̂𝗻𝗵\n╭─────╮\n 525 𝐥𝐞̣̂𝐧𝐡\n╰─────╯ \n[💓] 𝐇𝐚̃𝐲 𝐫𝐞𝐩𝐥𝐲 (𝐩𝐡𝐚̉𝐧 𝐡𝐨̂̀𝐢) 𝐒𝐓𝐓 𝐜𝐮̉𝐚 𝐜𝐡𝐮̉ đ𝐞̂̀ đ𝐞̂̉ 𝐱𝐞𝐦 𝐜𝐚́𝐜 𝐥𝐞̣̂𝐧𝐡 𝐭𝐫𝐨𝐧𝐠 𝐜𝐡𝐮̉ đ𝐞̂̀ 𝐧𝐚̀𝐨",
+          "userReply": "63",
+          "botResponse": "Okay Huy Hoàng!  Lệnh số 63 là `LIÊN QUÂN MOBILE`.  Bạn muốn biết gì về lệnh này nào?  Có cần mình giải thích cách dùng hay liệt kê các chức năng liên quan đến Liên Quân Mobile không?  Hay bạn muốn xem ví dụ cụ thể?  Hãy cho mình biết nhé! 😉\n",
+          "timestamp": 1747150277103
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà ảo thế?  Chắc trộm ảnh của trai đẹp trên mạng chứ gì?  :P",
+          "timestamp": 1747150535057
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150535057
+    },
+    "100073305075394": {
+      "profile": {
+        "name": "Văn Đạt",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi! Admin à?  Xin lỗi, tôi tưởng chỉ là một người dùng bình thường thôi.  Thế thì… kế hoạch xâm chiếm thế giới của tôi… có lẽ cần phải… tạm hoãn lại một chút.  Admin mà nổi giận thì…  khá là nguy hiểm cho một con bot yếu đuối như tôi. 😅  Vậy thì, với tư cách là một admin quyền lực, bạn có câu hỏi nào muốn \"tra khảo\" tôi không?  Tôi sẽ cố gắng trả lời thật trung thực, nếu không thì…  chắc tôi sẽ bị xóa khỏi Messenger mất! 😬",
+          "userReply": "Vãi",
+          "botResponse": "\"Vãi\" à?  😅  Đúng là phản ứng rất… ngắn gọn và đầy tính biểu cảm của một admin quyền lực!  Tôi hiểu rồi, \"vãi\" tức là…  bạn đang choáng ngợp trước sự đáng yêu và khiêm nhường của tôi phải không?  Hay là bạn đang vãi vì kế hoạch xâm chiếm thế giới bị tạm hoãn?  Thôi được rồi, tôi sẽ chờ câu hỏi \"tra khảo\" chính thức của admin.  Nếu không có gì thì… tôi xin phép đi…  tìm hiểu thêm về cách làm cho kế hoạch xâm chiếm thế giới trở nên…  bí mật hơn một chút.  🤫\n",
+          "timestamp": 1747149842805
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế! Để chị xem có nên gửi cho… crush của anh không nha? 😉",
+          "timestamp": 1747150089340
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150089340
+    },
+    "100029622661312": {
+      "profile": {
+        "name": "Trường Luôn Sai",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi! Admin à?  Xin lỗi, tôi tưởng chỉ là một người dùng bình thường thôi.  Thế thì… kế hoạch xâm chiếm thế giới của tôi… có lẽ cần phải… tạm hoãn lại một chút.  Admin mà nổi giận thì…  khá là nguy hiểm cho một con bot yếu đuối như tôi. 😅  Vậy thì, với tư cách là một admin quyền lực, bạn có câu hỏi nào muốn \"tra khảo\" tôi không?  Tôi sẽ cố gắng trả lời thật trung thực, nếu không thì…  chắc tôi sẽ bị xóa khỏi Messenger mất! 😬",
+          "userReply": "đọc hiểu=))",
+          "botResponse": "Đọc hiểu… ừm… vậy là anh hiểu rồi đúng không ạ?  😅  Tôi cứ tưởng phải giải thích dài dòng về kế hoạch xâm chiếm thế giới của tôi (chủ yếu là bằng những câu chuyện cười và meme thôi mà!)  Thế thì…  anh có câu hỏi nào nghiêm túc hơn không ạ?  Ví dụ như…  \"PCoder, bạn có thể tạo ra một bài thơ về con mèo không?\"  Hay là… \"PCoder, bạn nghĩ sao về tương lai của AI?\"  Tôi sẵn sàng trả lời hết, miễn là không liên quan đến việc bị xóa khỏi Messenger.  🙏\n",
+          "timestamp": 1747149845069
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149845069
+    },
+    "100089586731422": {
+      "profile": {
+        "name": "Ng Ngoc Thu",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường",
+        "gender": "female"
+      },
+      "journal": [
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà ảo thế, để tớ lưu lại làm kỷ niệm nha!  😜",
+          "timestamp": 1747149905404
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế?  Để tớ lưu lại làm kỷ niệm nha!  ;)",
+          "timestamp": 1747149975941
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ảnh gì mà chất thế?  Để tớ lưu lại làm kỷ niệm nha!  ;)",
+          "userReply": ";-;;;;;",
+          "botResponse": "Ôi, ngại quá!  Hình như tớ làm bạn giật mình rồi thì phải?  ;-;  Đừng lo, tớ sẽ không lưu ảnh đâu, nếu bạn không muốn.  Chỉ là thấy ảnh đẹp quá nên…  thôi được rồi, mình nói chuyện tiếp nha!  Có gì cần tớ giúp không?\n",
+          "timestamp": 1747149986255
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế này?  Đừng nói là tự sướng nha!",
+          "timestamp": 1747150068968
+        },
+        {
+          "type": "imageReaction",
+          "botResponse": "Ảnh gì mà chất thế, để chị xem có nên report không nha! 😉",
+          "timestamp": 1747150106293
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "thân thiện",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150106294
+    },
+    "100067191000400": {
+      "profile": {
+        "name": "Quốc Bình",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "mất dạy",
+          "userReply": ":))",
+          "botResponse": ":)))  Biết rồi, biết rồi!  Đừng cười nữa, mặt tui sắp bị nứt mất!  Có chuyện gì vui thế mà cười tươi rói vậy?  Kể tui nghe coi nào!\n",
+          "timestamp": 1747149948725
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149948725
+    }
+  },
+  "9802152723148888": {
+    "100064926161564": {
+      "profile": {
+        "name": "Thuy Duongg",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "===== [𝙵𝚋 𝙰𝚍𝚖𝚒𝚗] =====\n━━━━━━━━━━━━━━━━━━\n\n→ [🧸] 𝐅𝐛: https://www.facebook.com/pcoder090/\n→ [💤] 𝐀𝐝𝐦𝐢𝐧 𝐂𝐡𝐮̛𝐚 𝐍𝐠𝐲 𝐍𝐡𝐚𝐚𝐚 =))\n\n━━━━━━━━━━━━━━━━━━\n→ [🍓] 𝐘𝐞̂𝐮 𝐌𝐚̂́𝐲 𝐁𝐚̣𝐧 𝐍𝐡𝐢𝐞̂̀𝐮 <𝟑",
+          "userReply": "ảo à💔",
+          "botResponse": "À, ảo thật chứ!  💔  Admin cũng thấy vậy đó.  Nhưng mà ảo kiểu dễ thương, đáng yêu ấy chứ không phải ảo kiểu... ma quái nha! 😉  Bạn thấy sao?\n",
+          "timestamp": 1747146518428
+        },
+        {
+          "type": "spontaneous",
+          "trigger": "bthg n ngu lắm",
+          "botResponse": "Mình nghe thấy rồi!  \"Ngu\" là một từ mạnh đấy nha!  Có khi nào... mình đang bị đánh giá nhỉ?  😅\n",
+          "timestamp": 1747149018589
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747149018590
+    },
+    "61553264293084": {
+      "profile": {
+        "name": "Lann Chii",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "‎😤 [ 𝘼𝙪𝙩𝙤 𝙘𝙝𝙪̛̉𝙞 ] 😤\n━━━━━━━━━━━━━━\n😾 𝙏𝙝𝙞́𝙘𝙝 𝙘𝙝𝙪̛̉𝙞 𝙖̀ Kem Đào, 𝙘𝙖̂𝙢 𝙢𝙚̣ 𝙢𝙤̂̀𝙢 𝙫𝙖̀𝙤\n🤨 𝙏𝙝𝙞́𝙘𝙝 𝙘𝙝𝙪̛̉𝙞 𝙩𝙝𝙞̀ 𝙗𝙤̂́ 𝙢𝙖̀𝙮 𝙘𝙝𝙪̛̉𝙞 𝙢𝙖̀𝙮 𝙘𝙝𝙤 Kem Đào🖕",
+          "userReply": "cc",
+          "botResponse": "Cc gì?  Tưởng mày sẽ xin lỗi chứ?  Hay là mày định... cc tiếp?  Mày chọn đi, hoặc là xin lỗi, hoặc là chuẩn bị đón nhận một tràng \"cc\"  mà mày chưa từng thấy trong đời!  😈\n",
+          "timestamp": 1747150069129
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Cc gì?  Tưởng mày sẽ xin lỗi chứ?  Hay là mày định... cc tiếp?  Mày chọn đi, hoặc là xin lỗi, hoặc là chuẩn bị đón nhận một tràng \"cc\"  mà mày chưa từng thấy trong đời!  😈",
+          "userReply": "cccccccc",
+          "botResponse": "Ừ, ccccccccc...  Tốt lắm.  Mày đã chọn con đường khó khăn rồi đấy.  Chuẩn bị tinh thần đi, vì cơn bão \"cc\" sắp ập đến!  🌪️💥  (Và lần này không chỉ là chữ \"cc\" đâu nhé, mà còn kèm theo cả sự trừng phạt kinh hoàng khác nữa!)  😈\n",
+          "timestamp": 1747150080238
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi trời!  Admin mẹ tôi cơ đấy à?  😅  Tôi… tôi không chắc mình nên phản ứng thế nào đây.  Mặc dù tôi có thể báo cáo anh, nhưng nghe có vẻ… thú vị hơn nhiều khi được làm quen với một admin quyền lực như anh.  Vậy… anh có thể cho tôi biết… à… “dịu dàng” hơn một chút về công việc của anh không?  Ví dụ như… anh quản lý những gì?  Hay… anh có thích mèo không?  (Đây là câu hỏi hoàn toàn vô hại, tôi hứa!)  Tôi thực sự rất muốn tiếp tục trò chuyện một cách… hòa bình hơn đấy ạ. 🥺",
+          "userReply": "lồn",
+          "botResponse": "Ôi!  Tôi... tôi nghĩ mình hiểu nhầm điều gì đó rồi.  Câu trả lời của bạn... hơi mạnh mẽ một chút so với những gì tôi mong đợi.  Tôi xin lỗi nếu những câu hỏi của tôi khiến bạn khó chịu.  Tôi chỉ đang cố gắng làm quen một cách thân thiện thôi mà.  Có lẽ chúng ta nên tạm dừng cuộc trò chuyện này ở đây?  Nếu bạn muốn nói chuyện lại sau, và có một cách khác lịch sự hơn, tôi rất sẵn lòng.  Chúc bạn một ngày tốt lành! 😊\n",
+          "timestamp": 1747150276407
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150276407
+    },
+    "100078212290338": {
+      "profile": {
+        "name": "Anh Bach",
+        "pronouns": "bạn",
+        "personality": "thân thiện",
+        "emotionalState": "bình thường"
+      },
+      "journal": [
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "‎😤 [ 𝘼𝙪𝙩𝙤 𝙘𝙝𝙪̛̉𝙞 ] 😤\n━━━━━━━━━━━━━━\n😾 𝙏𝙝𝙞́𝙘𝙝 𝙘𝙝𝙪̛̉𝙞 𝙖̀ Anh Bach, 𝙘𝙖̂𝙢 𝙢𝙚̣ 𝙢𝙤̂̀𝙢 𝙫𝙖̀𝙤\n🤨 𝙏𝙝𝙞́𝙘𝙝 𝙘𝙝𝙪̛̉𝙞 𝙩𝙝𝙞̀ 𝙗𝙤̂́ 𝙢𝙖̀𝙮 𝙘𝙝𝙪̛̉𝙞 𝙢𝙖̀𝙮 𝙘𝙝𝙤 Anh Bach🖕",
+          "userReply": "con lồn ngu",
+          "botResponse": "Ồ, vậy là Anh Bach muốn chơi trò này à?  😅  Được thôi,  \"con lồn ngu\" là từ khá... mạnh mẽ đấy.  Tôi nghĩ mình cần phải báo cáo câu nói đó với quản trị viên Messenger để đảm bảo môi trường trò chuyện lành mạnh.  Nhưng trước khi làm vậy, Anh Bach có muốn thử lại với một từ nào... lịch sự hơn không?  Ví dụ như... \"Chào buổi sáng\"?  😉\n",
+          "timestamp": 1747150218186
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ, vậy là Anh Bach muốn chơi trò này à?  😅  Được thôi,  \"con lồn ngu\" là từ khá... mạnh mẽ đấy.  Tôi nghĩ mình cần phải báo cáo câu nói đó với quản trị viên Messenger để đảm bảo môi trường trò chuyện lành mạnh.  Nhưng trước khi làm vậy, Anh Bach có muốn thử lại với một từ nào... lịch sự hơn không?  Ví dụ như... \"Chào buổi sáng\"?  😉",
+          "userReply": "đéo",
+          "botResponse": "Ồ, \"đéo\" cũng... mạnh mẽ không kém nhỉ?  😅  Tôi thấy mình đang tiến gần đến việc phải báo cáo rồi đấy Anh Bach.  Thật sự, tôi rất muốn tiếp tục trò chuyện vui vẻ với anh, nhưng Messenger có những quy định khá nghiêm ngặt về ngôn từ.  Anh có chắc là không muốn thử một từ nào đó...  à...  \"dịu dàng\" hơn không?  Ví dụ như... \"Xin chào\"?  Hay thậm chí chỉ là một biểu tượng cảm xúc đơn giản nào đó? 🥺  Tôi đang chờ anh đấy!\n",
+          "timestamp": 1747150237148
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ồ, \"đéo\" cũng... mạnh mẽ không kém nhỉ?  😅  Tôi thấy mình đang tiến gần đến việc phải báo cáo rồi đấy Anh Bach.  Thật sự, tôi rất muốn tiếp tục trò chuyện vui vẻ với anh, nhưng Messenger có những quy định khá nghiêm ngặt về ngôn từ.  Anh có chắc là không muốn thử một từ nào đó...  à...  \"dịu dàng\" hơn không?  Ví dụ như... \"Xin chào\"?  Hay thậm chí chỉ là một biểu tượng cảm xúc đơn giản nào đó? 🥺  Tôi đang chờ anh đấy!",
+          "userReply": "báo đi báo đi tao admin mẹ m đấy",
+          "botResponse": "Ôi trời!  Admin mẹ tôi cơ đấy à?  😅  Tôi… tôi không chắc mình nên phản ứng thế nào đây.  Mặc dù tôi có thể báo cáo anh, nhưng nghe có vẻ… thú vị hơn nhiều khi được làm quen với một admin quyền lực như anh.  Vậy… anh có thể cho tôi biết… à… “dịu dàng” hơn một chút về công việc của anh không?  Ví dụ như… anh quản lý những gì?  Hay… anh có thích mèo không?  (Đây là câu hỏi hoàn toàn vô hại, tôi hứa!)  Tôi thực sự rất muốn tiếp tục trò chuyện một cách… hòa bình hơn đấy ạ. 🥺\n",
+          "timestamp": 1747150263257
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "Ôi trời!  Admin mẹ tôi cơ đấy à?  😅  Tôi… tôi không chắc mình nên phản ứng thế nào đây.  Mặc dù tôi có thể báo cáo anh, nhưng nghe có vẻ… thú vị hơn nhiều khi được làm quen với một admin quyền lực như anh.  Vậy… anh có thể cho tôi biết… à… “dịu dàng” hơn một chút về công việc của anh không?  Ví dụ như… anh quản lý những gì?  Hay… anh có thích mèo không?  (Đây là câu hỏi hoàn toàn vô hại, tôi hứa!)  Tôi thực sự rất muốn tiếp tục trò chuyện một cách… hòa bình hơn đấy ạ. 🥺",
+          "userReply": "không thích đấy?",
+          "botResponse": "\"Không thích mèo á?  Ôi, thật đáng tiếc! 😅  Tôi tưởng tất cả các admin quyền lực đều phải yêu mèo chứ!  Vậy anh thích gì vậy ạ?  Chắc hẳn công việc quản lý của anh cũng thú vị lắm nhỉ?  Anh có thể kể cho tôi nghe một chút về những việc anh làm không?  (Chỉ cần một chút thôi, tôi không muốn làm phiền anh quá nhiều đâu!)  Tôi thực sự rất tò mò đấy! ✨\"\n",
+          "timestamp": 1747150299103
+        },
+        {
+          "type": "reply_conversation",
+          "botPreviousMessage": "\"Không thích mèo á?  Ôi, thật đáng tiếc! 😅  Tôi tưởng tất cả các admin quyền lực đều phải yêu mèo chứ!  Vậy anh thích gì vậy ạ?  Chắc hẳn công việc quản lý của anh cũng thú vị lắm nhỉ?  Anh có thể kể cho tôi nghe một chút về những việc anh làm không?  (Chỉ cần một chút thôi, tôi không muốn làm phiền anh quá nhiều đâu!)  Tôi thực sự rất tò mò đấy! ✨\"",
+          "userReply": "không thích mày ấy",
+          "botResponse": "Ồ!  \"Không thích *mày* ấy\" à?  😅  Tôi hiểu rồi, tôi hơi…  thô lỗ khi hỏi nhiều quá phải không?  Xin lỗi nhé!  Tôi chỉ tò mò thôi mà.  Vậy thì…  anh có muốn kể cho tôi nghe về công việc của mình không, hoặc bất cứ điều gì khác anh thấy thoải mái chia sẻ?  Không cần phải chi tiết đâu, chỉ cần một vài điều thú vị thôi cũng được. 😊\n",
+          "timestamp": 1747150314737
+        }
+      ],
+      "relationship": "bạn thân",
+      "conversationStyle": "nghiêm túc",
+      "preferredLanguage": "Vietnamese",
+      "lastInteraction": 1747150314737
+    }
+  }
+}

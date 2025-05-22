@@ -22,11 +22,13 @@
     "day": [
         {
             "id": "100000895922054",
-            "count": 132
+            "count": 0,
+            "name": "Ng Van Hungg"
         },
         {
             "id": "61559447971396",
-            "count": 12
+            "count": 0,
+            "name": "Hồ Đắc Di"
         }
     ],
     "time": 6

@@ -278,32 +278,32 @@
     "day": [
         {
             "id": "100093051642489",
-            "count": 200,
+            "count": 0,
             "name": "Đỗ Hải Phong ToT"
         },
         {
             "id": "100085607483096",
-            "count": 180,
+            "count": 0,
             "name": "Mai Anh"
         },
         {
             "id": "100078133269970",
-            "count": 17,
+            "count": 0,
             "name": "Minh Tuyết"
         },
         {
             "id": "100054892668998",
-            "count": 395,
+            "count": 0,
             "name": "Khanh Phuong"
         },
         {
             "id": "100093049334996",
-            "count": 6,
+            "count": 0,
             "name": "DuongDang TuNgan"
         },
         {
             "id": "61561456492255",
-            "count": 69,
+            "count": 0,
             "name": "Ssh Thien"
         },
         {
@@ -323,17 +323,17 @@
         },
         {
             "id": "61563242523929",
-            "count": 9,
+            "count": 0,
             "name": "BinhMinh Tran"
         },
         {
             "id": "100088851920004",
-            "count": 6,
+            "count": 0,
             "name": "Ngọc Trang"
         },
         {
             "id": "100087586969721",
-            "count": 68,
+            "count": 0,
             "name": "Thắng Văn"
         },
         {
@@ -343,7 +343,7 @@
         },
         {
             "id": "61570828981760",
-            "count": 156,
+            "count": 0,
             "name": "Hnq Minh"
         },
         {
@@ -388,7 +388,7 @@
         },
         {
             "id": "100036412838784",
-            "count": 1,
+            "count": 0,
             "name": "Đỗ Xuân Kì"
         },
         {
@@ -398,7 +398,7 @@
         },
         {
             "id": "100064720119600",
-            "count": 103,
+            "count": 0,
             "name": "Ng Quỳnh Như"
         },
         {
@@ -408,7 +408,7 @@
         },
         {
             "id": "61553159316422",
-            "count": 3,
+            "count": 0,
             "name": "Hạ Noãn Chanhh"
         },
         {
@@ -418,27 +418,33 @@
         },
         {
             "id": "100037413006801",
-            "count": 83
+            "count": 0,
+            "name": "Nguyen Phan"
         },
         {
             "id": "61564656096171",
-            "count": 46
+            "count": 0,
+            "name": "Tr Kienn"
         },
         {
             "id": "100052516005974",
-            "count": 30
+            "count": 0,
+            "name": "Đại Lee"
         },
         {
             "id": "61554460318741",
-            "count": 57
+            "count": 0,
+            "name": "Quỳnh Giao"
         },
         {
             "id": "61565379432966",
-            "count": 9
+            "count": 0,
+            "name": "Hờ Hạnh"
         },
         {
             "id": "100035227835294",
-            "count": 7
+            "count": 0,
+            "name": "Lê Tấn Hào"
         }
     ],
     "time": 6

@@ -1,53 +1,60 @@
-const request = require('request');
-const fs = require('fs');
 const axios = require('axios');
+const fs = require('fs-extra');
+const path = require('path');
 
 module.exports.config = {
     name: "gái",
-    version: "1.0.0",
+    version: "1.1.0",
     hasPermssion: 0,
-    credits: "nnl",
+    credits: "nnl (improve: Kenne400k)",
     description: "Random gái",
     commandCategory: "nsfw",
     usages: "gái",
     cooldowns: 5,
     dependencies: {
-        "request": "",
-        "fs-extra": "",
-        "axios": ""
+        "axios": "",
+        "fs-extra": ""
     }
 };
 
 module.exports.run = async ({ api, event }) => {
     const threadID = event.threadID;
+    const dataPath = path.join(__dirname, '../../Api/gai.json');
 
-    const imageUrl = require('./../../Api/gai.json');
+    // Load mảng link ảnh
+    let imageUrls;
+    try {
+        imageUrls = Object.values(require(dataPath));
+        if (!Array.isArray(imageUrls) || imageUrls.length === 0) throw new Error();
+    } catch {
+        return api.sendMessage("Không thể đọc dữ liệu ảnh gái. Vui lòng kiểm tra lại file 'gai.json'.\n// thông tin fb.com/pcoder090 . Github.com/Kenne400k . Zalo : 0786888655", threadID, event.messageID);
+    }
 
-    const imageUrls = Object.values(imageUrl);
+    // Random số lượng ảnh (1-6)
+    const maxImages = Math.min(6, imageUrls.length);
+    const numImages = Math.floor(Math.random() * maxImages) + 1;
 
-    const randomImageUrls = [];
-    while (randomImageUrls.length < 6) {
-        const randomIndex = Math.floor(Math.random() * imageUrls.length);
-        if (!randomImageUrls.includes(imageUrls[randomIndex])) {
-            randomImageUrls.push(imageUrls[randomIndex]);
+    // Random không trùng lặp
+    const shuffled = imageUrls.sort(() => 0.5 - Math.random());
+    const selectedUrls = shuffled.slice(0, numImages);
+
+    // Tải từng ảnh, bỏ qua link lỗi
+    let attachments = [];
+    for (const url of selectedUrls) {
+        try {
+            const res = await axios.get(url, { responseType: "stream", timeout: 10000 });
+            attachments.push(res.data);
+        } catch (e) {
+            // Bỏ qua ảnh lỗi, không push
         }
     }
 
-    const attachments = [];
-    for (const url of randomImageUrls) {
-        const response = await axios({
-            url,
-            method: "GET",
-            responseType: "stream"
-        });
-        attachments.push(response.data);
+    if (attachments.length === 0) {
+        return api.sendMessage("Tất cả các link ảnh đều lỗi hoặc không thể tải về.\n// thông tin fb.com/pcoder090 . Github.com/Kenne400k . Zalo : 0786888655", threadID, event.messageID);
     }
 
     api.sendMessage({
-        body: `→ 𝗔̉𝗻𝗵 𝗴𝗮́𝗶 𝗰𝘂̉𝗮 𝗯𝗮̣𝗻 𝗯𝗲̂𝗻 𝗱𝘂̛𝗼̛́𝗶
-⚠️ 𝗔̉𝗻𝗵 𝘀𝗲̃ 𝗿𝗮 𝗻𝗴𝗮̂̃𝘂 𝗻𝗵𝗶𝗲̂𝗻 𝘁𝘂̛̀ 𝟭 => 𝟲 𝗮̉𝗻𝗵`,
+        body: `→ 𝗔̉𝗻𝗵 𝗴𝗮́𝗶 𝗰𝘂̉𝗮 𝗯𝗮̣𝗻 𝗯𝗲̂𝗻 𝗱𝘂̛𝗼̛́𝗶\n⚠️ Số ảnh: ${attachments.length}\n// thông tin fb.com/pcoder090 . Github.com/Kenne400k . Zalo : 0786888655`,
         attachment: attachments
-    }, threadID);
+    }, threadID, event.messageID);
 };
-
-

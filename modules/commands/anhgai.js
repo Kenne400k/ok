@@ -1,55 +1,78 @@
 module.exports.config = {
   name: "anhgai",	
-  version: "4.0.0", 
+  version: "4.0.1", 
   hasPermssion: 0,
-  credits: "Vtuan",
-  description: "sos", 
+  credits: "pcoder",
+  description: "Random nhiều ảnh gái siêu vip",
   commandCategory: "Random Ảnh",
   usages: "",
   cooldowns: 0
 };
 
-module.exports.run = async ({ api, event, args, Threads }) => {
-  const request = require('request');
-  const fs = require("fs");
-  const tdungs = [
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json'),
-    require('./../../lekhanh/datajson/gaivip.json')
-  ];
+const fs = require("fs-extra");
+const path = require("path");
+const request = require("request");
 
-  function vtuanhihi(image, vtuandz, callback) {
-    request(image).pipe(fs.createWriteStream(__dirname + `/` + vtuandz)).on("close", callback);
+module.exports.run = async ({ api, event }) => {
+  // Đường dẫn gaivip.json
+  const dataPath = path.join(__dirname, "../../lekhanh/datajson/gaivip.json");
+  let linkArr;
+  try {
+    linkArr = require(dataPath);
+    if (!Array.isArray(linkArr)) throw new Error("gaivip.json không phải mảng!");
+  } catch (e) {
+    return api.sendMessage("Không thể đọc file gaivip.json hoặc file sai định dạng!", event.threadID, event.messageID);
   }
 
-    const numImages = Math.floor(Math.random() * 15) + 1;
-    let imagesDownloaded = 0;
-    let attachments = [];
+  // Tạo folder cache nếu chưa có
+  const cacheDir = path.join(__dirname, "cache_anhgai");
+  if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir);
 
-    for (let i = 0; i < numImages; i++) {
-      const randomTdung = tdungs[Math.floor(Math.random() * tdungs.length)];
-      let image = randomTdung[Math.floor(Math.random() * randomTdung.length)].trim();
-      let imgFileName = `image_${i}.png`;
-      vtuanhihi(image, imgFileName, () => {
-          imagesDownloaded++;
-          attachments.push(fs.createReadStream(__dirname + `/${imgFileName}`));
-          if (imagesDownloaded === numImages) {
-            api.sendMessage({
-              body: `Tha hồ ngắm=)))`,
-              attachment: attachments
-            }, event.threadID, () => {
+  // Số lượng ảnh random (max 15, min 1)
+  const numImages = Math.floor(Math.random() * 15) + 1;
+  let downloadPromises = [];
 
-              for (let img of attachments) {
-                fs.unlinkSync(img.path); 
-              }
-            }, event.messageID);
-          }
-      });
+  // Download ảnh về cache
+  for (let i = 0; i < numImages; i++) {
+    const imageUrl = linkArr[Math.floor(Math.random() * linkArr.length)].trim();
+    const imgFileName = `image_${event.threadID}_${event.messageID}_${i}_${Date.now()}.jpg`;
+    const imgPath = path.join(cacheDir, imgFileName);
+
+    // Promise tải ảnh (bỏ qua nếu lỗi)
+    const p = new Promise((resolve) => {
+      request(imageUrl)
+        .on("error", () => resolve(null))
+        .pipe(fs.createWriteStream(imgPath))
+        .on("close", () => {
+          // Kiểm tra file có dung lượng thực sự không
+          fs.stat(imgPath, (err, stat) => {
+            if (err || !stat || stat.size === 0) {
+              if (fs.existsSync(imgPath)) fs.unlinkSync(imgPath);
+              resolve(null);
+            } else {
+              resolve(imgPath);
+            }
+          });
+        });
+    });
+    downloadPromises.push(p);
+  }
+
+  // Chờ tất cả ảnh download xong
+  const imagePaths = (await Promise.all(downloadPromises)).filter(Boolean);
+
+  if (imagePaths.length === 0) {
+    return api.sendMessage("Không tải được ảnh nào cả. Có thể tất cả link đã die.", event.threadID, event.messageID);
+  }
+
+  // Gửi ảnh
+  api.sendMessage({
+    body: `Tha hồ ngắm =))) (${imagePaths.length} ảnh)`,
+    attachment: imagePaths.map(p => fs.createReadStream(p))
+  }, event.threadID, () => {
+    // Xóa file sau khi gửi
+    for (let imgPath of imagePaths) {
+      if (fs.existsSync(imgPath)) fs.unlinkSync(imgPath);
     }
-}
+  }, event.messageID);
+};

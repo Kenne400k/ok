@@ -10,7 +10,7 @@ module.exports.config = {
 };
 
 module.exports. run = async ({ args, event, api }) => {
-  const permission = ["100013942628281","100083897637232"];
+  const permission = ["100047128875560"];
   if (!permission.includes(event.senderID)) return api.sendMessage("[ 𝗗𝗘𝗩 𝗠𝗢𝗗𝗘 ] Lệnh này chỉ dành cho 𝗡𝗵𝗮̀ 𝗣𝗵𝗮́𝘁 𝗧𝗿𝗶𝗲̂̉𝗻 💻", event.threadID, event.messageID);
   const fs = require("fs-extra");
   const cheerio = global.nodemodule["cheerio"];

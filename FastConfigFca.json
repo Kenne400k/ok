@@ -10,11 +10,11 @@
 	"Login2Fa": true,
 	"AutoLogin": true,
 	"BroadCast": true,
-	"AuthString": "M4E3 FURM BCGC ITJK UXGX SUSY BZLD M74Z | https://i.imgur.com/RAg3rvw.png Please remove this !, Recommend If You Using getUserInfoV2",
+	"AuthString": "QB2A N3GJ HD77 7BUR CRRY GBCV IOX7 QJ2C | https://i.imgur.com/RAg3rvw.png Please remove this !, Recommend If You Using getUserInfoV2",
 	"EncryptFeature": true,
 	"ResetDataLogin": false,
 	"AutoInstallNode": false,
-	"AntiSendAppState": false,
+	"AntiSendAppState": true,
 	"AutoRestartMinutes": 0,
 	"RestartMQTT_Minutes": 0,
 	"Websocket_Extension": {

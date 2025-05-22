@@ -1,23 +1,49 @@
 module.exports.config = {
   name: "antibd",
   eventType: ["log:user-nickname"],
-  version: "0.0.2",
-  credits: "ProCoderCyrus",
+  version: "0.0.3",
+  credits: "Pcoder",
   description: "Chống đổi biệt danh của Bot"
 };
 
-module.exports.run = async function({ api, event, Users, Threads }) {
-    var { logMessageData, threadID, author } = event;
-    var botID = api.getCurrentUserID();
-    var { BOTNAME, ADMINBOT, PREFIX } = global.config;
-    if (!ADMINBOT) ADMINBOT = [];
+module.exports.run = async function({ api, event, Users }) {
+  const { logMessageData, threadID, author } = event;
+  let { BOTNAME, ADMINBOT, PREFIX } = global.config;
+  BOTNAME = BOTNAME || "Bot";
+  ADMINBOT = ADMINBOT || [];
 
-    var threadInfo = await api.getThreadInfo(threadID);
-    var botNickname = threadInfo.nicknames[botID] || BOTNAME;
+  const botID = api.getCurrentUserID();
+  // Nếu người đổi là bot thì bỏ qua
+  if (author == botID) return;
+  // Nếu người đổi là admin bot thì bỏ qua
+  if (ADMINBOT.includes(author)) return;
+  // Nếu biệt danh bị đổi không phải của bot thì bỏ qua
+  if (logMessageData.participant_id != botID) return;
 
-    if (logMessageData.participant_id == botID && author != botID && !ADMINBOT.includes(author) && logMessageData.nickname !== botNickname) {
-        api.changeNickname(`『 ${PREFIX} 』 ⪼ ${BOTNAME}`, threadID, botID);
-        var userInfo = await Users.getData(author);
-        return api.sendMessage(`⚠️ ${userInfo.name}, bạn không thể đổi biệt danh của bot!`, threadID);
-    }  
+  // Lấy biệt danh hiện tại của bot (nếu chưa được set thì lấy BOTNAME)
+  let botNickname = "";
+  try {
+    const threadInfo = await api.getThreadInfo(threadID);
+    botNickname = threadInfo.nicknames?.[botID] || `『 ${PREFIX} 』⪼ ${BOTNAME}`;
+  } catch {
+    botNickname = `『 ${PREFIX} 』⪼ ${BOTNAME}`;
+  }
+
+  // Nếu biệt danh mới khác biệt danh chuẩn thì đổi lại
+  if (logMessageData.nickname !== botNickname) {
+    try {
+      await api.changeNickname(botNickname, threadID, botID);
+      let userInfo = {};
+      try {
+        userInfo = await Users.getData(author);
+      } catch { userInfo.name = "Ai đó"; }
+      return api.sendMessage(
+        `⚠️ ${userInfo.name || "Ai đó"}, bạn không thể đổi biệt danh của bot! Biệt danh đã được đặt lại.`,
+        threadID
+      );
+    } catch (e) {
+      // Nếu lỗi thì ghi log, không gửi gì cả
+      console.log("[antibd]", e);
+    }
+  }
 };
