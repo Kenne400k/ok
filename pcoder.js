@@ -8,26 +8,25 @@ ffmpeg.setFfmpegPath(ffmpegPath);
 
 module.exports.config = {
   name: "Tường",
-  version: "7.0.0",
+  version: "9.0.0",
   hasPermssion: 0,
-  credits: "Nguyễn Trương Thiện Phát (Tường AI GenZ, Gemini-YouTube, Kenne400k tối ưu)",
-  description: "AI Gemini đa tài: mở video/mp3 qua Gemini, tải mọi thể loại, cảm xúc, minigame, học, profile, training, phản hồi ảnh, meme, quote, thời tiết, dịch thuật, nhắc hẹn, cực xịn, siêu an toàn.",
+  credits: "Nguyễn Trương Thiện Phát (Tường AI GenZ, Kenne400k tối ưu, YouTube, meme, dịch, thời tiết, minigame, nhắc hẹn, profile, cực xịn)",
+  description: "Tường AI: Gửi video/mp3 YouTube (không quota, không key), cảm xúc, minigame, dịch, meme, thời tiết, quote, nhắc hẹn, profile cá nhân hóa, training, phản hồi ảnh, cực an toàn, không lỗi.",
   commandCategory: "ai",
   usages: [
-    "Tường ơi mở video buồn của anh",
-    "Tường gửi nhạc [tên bài]",
     "Tường gửi video [từ khóa]",
+    "Tường gửi mp3 [tên bài]",
     "Tường mp3 [tên bài]",
-    "Tường cảm xúc: [cảm xúc]",
+    "Tường video [từ khóa]",
+    "Tường cho xin video của [ca sĩ]",
+    "Tường gửi nhạc của [ai]",
     "Tường chơi đoán số",
     "Tường profile",
-    "Tường resetdata",
-    "Tường học câu này: [nội dung]",
-    "Tường training on/off",
+    "Tường cảm xúc: [cảm xúc]",
     "Tường quote",
-    "Tường dịch [ngôn ngữ]: [nội dung]",
-    "Tường thời tiết [địa điểm]",
-    "Tường nhắc [nội dung] lúc [giờ]"
+    "Tường dịch en: tôi yêu bạn",
+    "Tường thời tiết Sài Gòn",
+    "Tường nhắc đi ngủ lúc 23:30"
   ],
   cooldowns: 2,
   dependencies: {
@@ -45,6 +44,7 @@ const userDataPath = path.join(dataPath, "tuong_users.json");
 const trainingDataPath = path.join(dataPath, "tuong_training.json");
 const reminderPath = path.join(dataPath, "tuong_reminders.json");
 
+// Tạo folder/file nếu chưa có
 module.exports.onLoad = async () => {
   if (!fs.existsSync(dataPath)) fs.mkdirSync(dataPath, { recursive: true });
   if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
@@ -57,7 +57,6 @@ module.exports.onLoad = async () => {
     trainingSessions: new Map(),
     reminders: JSON.parse(fs.readFileSync(reminderPath))
   };
-  global.ytDownloadRequests = new Map();
   setInterval(() => {
     try {
       const files = fs.readdirSync(tempDir);
@@ -69,7 +68,6 @@ module.exports.onLoad = async () => {
       });
     } catch {}
   }, 30 * 60 * 1000);
-
   setInterval(() => handleReminders(), 30 * 1000);
 };
 
@@ -82,32 +80,97 @@ function getEmo(state) {
   return "🤖";
 }
 
-async function downloadYouTube(videoUrl, type, outPath) {
-  return new Promise((resolve, reject) => {
-    try {
-      if (type === "mp3") {
-        const stream = ytdl(videoUrl, { filter: "audioonly" });
-        ffmpeg(stream)
-          .audioBitrate(128)
-          .format("mp3")
-          .save(outPath)
-          .on("end", () => resolve(outPath))
-          .on("error", reject);
-      } else {
-        const stream = ytdl(videoUrl, { quality: "highestvideo" });
-        ffmpeg(stream)
-          .videoCodec('libx264')
-          .audioCodec('aac')
-          .format('mp4')
-          .save(outPath)
-          .on("end", () => resolve(outPath))
-          .on("error", reject);
-      }
-    } catch (err) { reject(err); }
-  });
+// YouTube search cực nhẹ, không quota, không cần API KEY, không giới hạn
+async function searchYouTubeVideoId(query) {
+  try {
+    const res = await axios.get("https://www.youtube.com/results", {
+      params: { search_query: query },
+      headers: { "User-Agent": "Mozilla/5.0" }
+    });
+    const match = res.data.match(/"videoId":"([\w-]{11})"/);
+    if (match && match[1]) return match[1];
+    return null;
+  } catch {
+    return null;
+  }
 }
 
-// Weather API (Open-Meteo, free, không cần key)
+// Gửi mp3/mp4 từ YouTube, không lưu lâu
+async function sendYouTubeMedia({ api, threadID, messageID, query, type }) {
+  const videoId = await searchYouTubeVideoId(query);
+  if (!videoId) return api.sendMessage("Không tìm thấy video hợp lệ trên YouTube!", threadID, messageID);
+  const url = `https://www.youtube.com/watch?v=${videoId}`;
+  const fileExt = type === "mp3" ? "mp3" : "mp4";
+  const outPath = path.join(tempDir, `yt_${videoId}_${Date.now()}.${fileExt}`);
+  api.sendMessage(`🔎 Đang tải ${type === "mp3" ? "nhạc" : "video"}: ${url}\n⏳ Đợi Tường xíu nhé...`, threadID, async () => {
+    try {
+      if (type === "mp3") {
+        const stream = ytdl(url, { filter: "audioonly" });
+        await new Promise((resolve, reject) => {
+          ffmpeg(stream)
+            .audioBitrate(128)
+            .format("mp3")
+            .save(outPath)
+            .on("end", resolve)
+            .on("error", reject);
+        });
+      } else {
+        const stream = ytdl(url, { quality: "highestvideo" });
+        await new Promise((resolve, reject) => {
+          ffmpeg(stream)
+            .videoCodec('libx264')
+            .audioCodec('aac')
+            .format('mp4')
+            .save(outPath)
+            .on("end", resolve)
+            .on("error", reject);
+        });
+      }
+      const stats = fs.statSync(outPath);
+      if (stats.size > 90 * 1024 * 1024) {
+        fs.unlinkSync(outPath);
+        return api.sendMessage("File quá lớn không thể gửi qua Messenger. Hãy thử video ngắn hơn!", threadID, messageID);
+      }
+      await api.sendMessage({
+        body: `Tường gửi bạn ${type === "mp3" ? "mp3" : "video"} YouTube nè!\n${url}`,
+        attachment: fs.createReadStream(outPath)
+      }, threadID, () => {
+        try { fs.unlinkSync(outPath); } catch {}
+      }, messageID);
+    } catch {
+      try { fs.unlinkSync(outPath); } catch {}
+      api.sendMessage("Tải/gửi file thất bại hoặc bị lỗi mạng!", threadID, messageID);
+    }
+  }, messageID);
+}
+
+// Dịch thuật Google Translate unofficial
+async function translateText(text, lang) {
+  try {
+    const res = await axios.get(
+      `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${lang}&dt=t&q=${encodeURIComponent(text)}`
+    );
+    return res.data[0].map(i => i[0]).join("");
+  } catch {
+    return "Không dịch được nội dung!";
+  }
+}
+
+// Quote API
+async function getQuote() {
+  try {
+    const res = await axios.get("https://api.quotable.io/random?maxLength=80");
+    return `"${res.data.content}"\n— ${res.data.author}`;
+  } catch {
+    return randomArr([
+      "Đời là bể khổ, qua được bể khổ là qua đời.",
+      "Học không chơi đánh rơi tuổi trẻ, chơi không học... chơi tiếp.",
+      "Cố gắng lên, đời còn dài, drama còn nhiều!"
+    ]);
+  }
+}
+
+// Thời tiết Open-Meteo
 async function getWeather(location) {
   try {
     const geo = await axios.get(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(location)}&format=json&limit=1`);
@@ -159,33 +222,7 @@ function weatherVN(code) {
   return map[code] || "Không rõ";
 }
 
-// Quote API
-async function getQuote() {
-  try {
-    const res = await axios.get("https://api.quotable.io/random?maxLength=80");
-    return `"${res.data.content}"\n— ${res.data.author}`;
-  } catch {
-    return randomArr([
-      "Đời là bể khổ, qua được bể khổ là qua đời.",
-      "Học không chơi đánh rơi tuổi trẻ, chơi không học... chơi tiếp.",
-      "Cố gắng lên, đời còn dài, drama còn nhiều!"
-    ]);
-  }
-}
-
-// Dịch thuật (Google Translate API free unofficial)
-async function translateText(text, lang) {
-  try {
-    const res = await axios.get(
-      `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${lang}&dt=t&q=${encodeURIComponent(text)}`
-    );
-    return res.data[0].map(i => i[0]).join("");
-  } catch {
-    return "Không dịch được nội dung!";
-  }
-}
-
-// Nhắc hẹn thông minh
+// Nhắc hẹn
 async function handleReminders(api = null) {
   let reminders = [];
   try { reminders = JSON.parse(fs.readFileSync(reminderPath)); } catch {}
@@ -202,56 +239,13 @@ async function handleReminders(api = null) {
   global.tuongData.reminders = reminders;
 }
 
-// ==== VIDEO/MP3 YOUTUBE TỪ GEMINI ====
-async function handleGeminiMedia(api, threadID, messageID, senderID, geminiPrompt) {
-  const geminiAPIKey = process.env.GEMINI_API_KEY || "AIzaSyDW0dxS6-Agy6468HfagcUhUKHjo4OSAl8";
-  const geminiSysPrompt = `
-${geminiPrompt}
-Nếu có thể, chỉ trả lời bằng 1 hoặc nhiều link video YouTube hoặc mp3, mỗi link trên một dòng riêng. Nếu có mp3 hoặc link nhạc hãy ưu tiên gửi.
-Nếu không có link hãy trả lời "Không tìm thấy video nào phù hợp."
-  `.trim();
-  let geminiResp;
-  try {
-    const res = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiAPIKey}`,
-      {
-        contents: [{ role: "user", parts: [{ text: geminiSysPrompt }] }],
-        generationConfig: { temperature: 0.72, topP: 0.98, maxOutputTokens: 500 }
-      }
-    );
-    geminiResp = (res.data?.candidates?.[0]?.content?.parts?.[0]?.text || "").trim();
-  } catch {
-    return api.sendMessage("Tường đang lag, thử lại sau nhé!", threadID, messageID);
-  }
-  if (!geminiResp || /không tìm thấy video/i.test(geminiResp)) {
-    return api.sendMessage("Không tìm được video nào hợp lý.", threadID, messageID);
-  }
-  const ytLinks = [];
-  const mp3Links = [];
-  const ytRegex = /(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/[^\s]+/gi;
-  const mp3Regex = /(https?:\/\/[^\s]+\.mp3)/gi;
-  let match;
-  while ((match = ytRegex.exec(geminiResp)) !== null) ytLinks.push(match[0]);
-  while ((match = mp3Regex.exec(geminiResp)) !== null) mp3Links.push(match[0]);
-  let links = mp3Links.concat(ytLinks);
-  if (links.length === 0) return api.sendMessage("Không tìm được link nào từ Gemini!", threadID, messageID);
-  let msg = "🔗 Tường tìm được những link này:\n";
-  links.forEach((link, i) => { msg += `${i+1}. ${link}\n`; });
-  msg += "\n- Reply số thứ tự để tải về (mp3/video nếu là Youtube).\n- Hoặc reply 'mở' + số để nhận link dạng web mở nhanh.";
-  api.sendMessage(msg, threadID, (err, replyMsg) => {
-    if (!replyMsg) return;
-    global.ytDownloadRequests.set(replyMsg.messageID, {
-      links, senderID, timestamp: Date.now()
-    });
-  }, messageID);
-}
-
 // ==== MAIN HANDLE EVENT ====
 module.exports.handleEvent = async function({ api, event }) {
   if (event.senderID === api.getCurrentUserID() || (!event.body && !event.attachments)) return;
   const { threadID, messageID, senderID, body = "", type, messageReply, attachments } = event;
   let userData = global.tuongData.users;
-  // ==== PROFILE, STREAK, AUTO CREATE ====
+
+  // ==== PROFILE/STREAK/AUTO CREATE ====
   if (!userData[threadID]) userData[threadID] = {};
   if (!userData[threadID][senderID]) {
     userData[threadID][senderID] = {
@@ -289,22 +283,17 @@ module.exports.handleEvent = async function({ api, event }) {
     return;
   }
 
-  // ==== REMINDER ====
-  if (/tường nhắc (.+) lúc (\d{1,2}:\d{2})/i.test(body.toLowerCase())) {
-    const match = body.match(/tường nhắc (.+) lúc (\d{1,2}:\d{2})/i);
-    if (match) {
-      let content = match[1].trim();
-      let [h, m] = match[2].split(":").map(Number);
-      let now = new Date();
-      let remindTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, m, 0, 0).getTime();
-      if (remindTime < Date.now()) remindTime += 24 * 60 * 60 * 1000;
-      let reminders = [];
-      try { reminders = JSON.parse(fs.readFileSync(reminderPath)); } catch {}
-      reminders.push({ content, time: remindTime, threadID, messageID });
-      fs.writeFileSync(reminderPath, JSON.stringify(reminders, null, 2));
-      global.tuongData.reminders = reminders;
-      return api.sendMessage(`Nhắc "${content}" vào lúc ${match[2]} đã được đặt!`, threadID, messageID);
-    }
+  // ==== VIDEO YOUTUBE NGAY LẬP TỨC ====
+  if (/(gửi|cho|lấy|tải|send|mở|phát|share|bật|chuyển)\s*(video|clip|mp4)[^\n]*$/i.test(body) || body.toLowerCase().startsWith("tường video") || body.toLowerCase().startsWith("tường gửi video") || body.toLowerCase().startsWith("tường cho video") || body.toLowerCase().startsWith("tường cho xin video")) {
+    let query = body.replace(/tường\s*(gửi|cho|lấy|tải|send|mở|phát|share|bật|chuyển)?\s*(video|clip|mp4)?/i, "").trim();
+    if (!query) return api.sendMessage("Bạn muốn tìm video gì trên YouTube?", threadID, messageID);
+    return sendYouTubeMedia({ api, threadID, messageID, query, type: "mp4" });
+  }
+  // ==== MP3 YOUTUBE NGAY LẬP TỨC ====
+  if (/(gửi|cho|lấy|tải|send|mở|phát|share|bật|chuyển)\s*(mp3|audio|nhạc|bài|track)[^\n]*$/i.test(body) || body.toLowerCase().startsWith("tường mp3") || body.toLowerCase().startsWith("tường gửi mp3") || body.toLowerCase().startsWith("tường cho mp3") || body.toLowerCase().startsWith("tường gửi nhạc")) {
+    let query = body.replace(/tường\s*(gửi|cho|lấy|tải|send|mở|phát|share|bật|chuyển)?\s*(mp3|audio|nhạc|bài|track)?/i, "").trim();
+    if (!query) return api.sendMessage("Bạn muốn nghe nhạc/bài gì trên YouTube?", threadID, messageID);
+    return sendYouTubeMedia({ api, threadID, messageID, query, type: "mp3" });
   }
 
   // ==== DỊCH THUẬT ====
@@ -331,6 +320,24 @@ module.exports.handleEvent = async function({ api, event }) {
     let w = await getWeather(location);
     if (!w) return api.sendMessage("Không lấy được thông tin thời tiết!", threadID, messageID);
     return api.sendMessage(`🌤 Thời tiết tại ${w.location}:\n• ${w.desc}\n• Nhiệt độ: ${w.temp}°C\n• Gió: ${w.wind} km/h`, threadID, messageID);
+  }
+
+  // ==== NHẮC HẸN ====
+  if (/tường nhắc (.+) lúc (\d{1,2}:\d{2})/i.test(body.toLowerCase())) {
+    const match = body.match(/tường nhắc (.+) lúc (\d{1,2}:\d{2})/i);
+    if (match) {
+      let content = match[1].trim();
+      let [h, m] = match[2].split(":").map(Number);
+      let now = new Date();
+      let remindTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, m, 0, 0).getTime();
+      if (remindTime < Date.now()) remindTime += 24 * 60 * 60 * 1000;
+      let reminders = [];
+      try { reminders = JSON.parse(fs.readFileSync(reminderPath)); } catch {}
+      reminders.push({ content, time: remindTime, threadID, messageID });
+      fs.writeFileSync(reminderPath, JSON.stringify(reminders, null, 2));
+      global.tuongData.reminders = reminders;
+      return api.sendMessage(`Nhắc "${content}" vào lúc ${match[2]} đã được đặt!`, threadID, messageID);
+    }
   }
 
   // ==== EMOTION UPDATE ====
@@ -376,221 +383,21 @@ module.exports.handleEvent = async function({ api, event }) {
   if (attachments && attachments.length > 0 && attachments.some(att => att.type === "photo" || att.type === "animated_image")) {
     if (userData[threadID] && Math.random() < 0.49) {
       try {
-        const geminiAPIKey = process.env.GEMINI_API_KEY || "AIzaSyDW0dxS6-Agy6468HfagcUhUKHjo4OSAl8";
         let userGender = user.profile.gender || (Math.random() > 0.5 ? "female" : "male");
         let userRelationship = user.relationship || "bạn thân";
-        let userName = user.profile.name || "Bạn";
-        const prompt = `Bạn là Tường (AI GenZ). Phản hồi cực hài, cực ngầu, khi bạn thân (${userGender}) gửi ảnh cho bạn (${userRelationship}). Phản hồi dưới 18 từ, không prefix, GenZ vibe.`;
-        const response = await axios.post(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiAPIKey}`,
-          { contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { temperature: 0.98, topP: 0.99, maxOutputTokens: 60 } }
-        );
-        let reactionMessage = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || "Ảnh gì mà dễ thương thế!").trim();
-        user.journal.push({ type: "imageReaction", botResponse: reactionMessage, timestamp: Date.now() });
+        let react = randomArr([
+          "Ảnh gì mà cute vậy trời 😆",
+          "Ảnh này mà crush thấy chắc say nắng luôn",
+          "Coi chừng bị lộ hàng nha 😏",
+          "Up story liền đi bạn ơi!",
+          "Ơ kìa ai đẹp thế này?",
+          "Ảnh này mà làm avatar là nổi luôn đó!"
+        ]);
+        user.journal.push({ type: "imageReaction", botResponse: react, timestamp: Date.now() });
         user.lastInteraction = Date.now();
         fs.writeFileSync(userDataPath, JSON.stringify(userData, null, 2));
-        api.sendMessage(reactionMessage, threadID, messageID);
+        api.sendMessage(react, threadID, messageID);
       } catch {}
-    }
-  }
-
-  // ==== VIDEO/MP3 YOUTUBE TỪ GEMINI ====
-  if (/tường.*(mở|phát|play|cho|gửi|share|bật|chuyển|lấy|tải).*?(video|clip|mp3|audio|nhạc|bài|bản|track)/i.test(body.toLowerCase())) {
-    let cleaned = body.replace(/tường\s*ơi/gi, "").replace(/tường/gi, "").trim();
-    let prompt = cleaned;
-    if (!prompt || prompt.length < 6) prompt = "Gợi ý cho mình một video hoặc mp3 trending, hoặc chủ đề hot trên YouTube.";
-    return handleGeminiMedia(api, threadID, messageID, senderID, prompt);
-  }
-
-  // ==== XỬ LÝ REPLY ĐỂ TẢI VIDEO/MP3 TỪ GEMINI LINK ====
-  if (type === "message_reply" && global.ytDownloadRequests && global.ytDownloadRequests.has(messageReply?.messageID)) {
-    const req = global.ytDownloadRequests.get(messageReply.messageID);
-    if (!req || (Date.now() - req.timestamp > 15 * 60 * 1000)) {
-      global.ytDownloadRequests.delete(messageReply.messageID);
-      return api.sendMessage("Yêu cầu tải/mở đã hết hạn. Gõ lại yêu cầu nhé!", threadID, messageID);
-    }
-    if (senderID !== req.senderID) return;
-    const numMatch = body.trim().match(/^mở\s*(\d+)/i) || body.trim().match(/^(\d+)$/);
-    if (!numMatch) return api.sendMessage("Reply số thứ tự hoặc 'mở' + số tương ứng!", threadID, messageID);
-    const idx = parseInt(numMatch[1] || numMatch[0]);
-    if (isNaN(idx) || idx < 1 || idx > req.links.length) return api.sendMessage("Số thứ tự không hợp lệ!", threadID, messageID);
-    const link = req.links[idx-1];
-    if (/mở/i.test(body)) {
-      return api.sendMessage(`Đây là link bạn yêu cầu: ${link}`, threadID, messageID);
-    }
-    if (/\.mp3(\?|$)/i.test(link)) {
-      const outPath = path.join(__dirname, "temp", `gemini_${Date.now()}.mp3`);
-      try {
-        const res = await axios.get(link, { responseType: "arraybuffer" });
-        fs.writeFileSync(outPath, Buffer.from(res.data, "binary"));
-        await api.sendMessage({body: "Gửi bạn mp3 nè!", attachment: fs.createReadStream(outPath)}, threadID, () => {
-          try { fs.unlinkSync(outPath); } catch {}
-        }, messageID);
-      } catch {
-        return api.sendMessage("Không tải được file mp3 từ link ngoài!", threadID, messageID);
-      }
-      global.ytDownloadRequests.delete(messageReply.messageID);
-      return;
-    }
-    if (/(youtube\.com|youtu\.be)/i.test(link)) {
-      api.sendMessage("Bạn muốn nhận video hay mp3? (reply: mp3/video)", threadID, (err, subMsg) => {
-        if (!subMsg) return;
-        global.ytDownloadRequests.set(subMsg.messageID, {
-          ytlink: link, senderID, timestamp: Date.now()
-        });
-      }, messageID);
-    }
-    global.ytDownloadRequests.delete(messageReply.messageID);
-    return;
-  }
-  // REPLY tiếp theo: nhận xác nhận mp3/video từ link youtube
-  if (type === "message_reply" && global.ytDownloadRequests && global.ytDownloadRequests.has(messageReply?.messageID)) {
-    const req = global.ytDownloadRequests.get(messageReply.messageID);
-    if (!req || !req.ytlink || (Date.now() - req.timestamp > 15 * 60 * 1000)) {
-      global.ytDownloadRequests.delete(messageReply.messageID);
-      return;
-    }
-    if (senderID !== req.senderID) return;
-    let replyType = /mp3|audio|nhạc/.test(body.toLowerCase()) ? "mp3" : "mp4";
-    const outName = `geminilink_${Date.now()}.${replyType}`;
-    const outPath = path.join(__dirname, "temp", outName);
-    api.sendMessage("Đang tải & xử lý file, đợi xíu nha ...", threadID, async () => {
-      try {
-        await downloadYouTube(req.ytlink, replyType, outPath);
-        const stats = fs.statSync(outPath);
-        if (stats.size > 90 * 1024 * 1024) {
-          fs.unlinkSync(outPath);
-          return api.sendMessage("File quá lớn không thể gửi qua Messenger. Vui lòng chọn video khác/ngắn hơn!", threadID, messageID);
-        }
-        api.sendMessage({ body: `Gửi bạn file ${replyType === "mp3" ? "mp3" : "video"} nè!`, attachment: fs.createReadStream(outPath) }, threadID, () => {
-          try { fs.unlinkSync(outPath); } catch {}
-        }, messageID);
-      } catch (err) {
-        api.sendMessage("Lỗi tải/gửi file. Có thể video đã chặn tải hoặc lỗi hệ thống!", threadID, messageID);
-        try { fs.unlinkSync(outPath); } catch {}
-      }
-    });
-    global.ytDownloadRequests.delete(messageReply.messageID);
-    return;
-  }
-
-  // ==== REPLY TO BOT MESSAGE, DUY TRÌ MẠCH HỘI THOẠI ====
-  if (type === "message_reply" && messageReply && messageReply.senderID === api.getCurrentUserID()) {
-    try {
-      const geminiAPIKey = process.env.GEMINI_API_KEY || "AIzaSyDW0dxS6-Agy6468HfagcUhUKHjo4OSAl8";
-      const systemPrompt = `Bạn là Tường, AI cực thân thiện, siêu GenZ, vui tính, cực ngầu. ${user.profile.name} vừa reply: "${messageReply.body}". Họ nói: "${body}". Hãy tiếp tục hội thoại tự nhiên, nối mạch cũ, không prefix, thêm chút meme/emoji nếu hợp.`;
-      const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiAPIKey}`,
-        { contents: [{ role: "user", parts: [{ text: systemPrompt }] }], generationConfig: { temperature: 0.85, topP: 0.98, maxOutputTokens: 800 } }
-      );
-      let aiResponse = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || "Tường chưa hiểu ý bạn. Nói lại nha!").trim();
-      user.journal.push({
-        type: "reply_conversation",
-        botPreviousMessage: messageReply.body,
-        userReply: body,
-        botResponse: aiResponse,
-        timestamp: Date.now()
-      });
-      user.lastInteraction = Date.now();
-      fs.writeFileSync(userDataPath, JSON.stringify(userData, null, 2));
-      return api.sendMessage(aiResponse, threadID, messageID);
-    } catch (err) {
-      return api.sendMessage("Tường không hiểu ý bạn lắm. Nói lại thử nha!", threadID, messageID);
-    }
-  }
-
-  // ==== TRAINING MODE ====
-  const { trainingSessions } = global.tuongData;
-  if (trainingSessions.has(threadID) && !body.toLowerCase().includes("tường")) {
-    const trainingData = JSON.parse(fs.readFileSync(trainingDataPath));
-    trainingData.push({ message: body, senderID, threadID, timestamp: Date.now() });
-    fs.writeFileSync(trainingDataPath, JSON.stringify(trainingData, null, 2));
-    global.tuongData.training = trainingData;
-    return;
-  }
-
-  // ==== PHẢN ỨNG KHI BỊ TAG/LIÊN QUAN CODE ====
-  const programmingKeywords = [
-    "javascript", "python", "java", "c++", "c#", "php", "html", "css", "code", "coding",
-    "programming", "developer", "function", "variable", "class", "object", "array", "loop",
-    "if else", "api", "database", "sql", "nodejs", "react", "typescript", "framework", "algorithm", "git", "github"
-  ];
-  const messageContainsTuong = body.toLowerCase().includes("tường");
-  const messageStartsWithTuong = body.toLowerCase().startsWith("tường");
-  const containsProgrammingKeywords = programmingKeywords.some(keyword => body.toLowerCase().includes(keyword));
-  if ((!messageStartsWithTuong && messageContainsTuong) || (containsProgrammingKeywords && Math.random() < 0.55)) {
-    let responses = [
-      "Ai gọi Tường đấy nhỉ? 👀",
-      "Ơ t nghe thấy tên Tường luôn nè!",
-      "Bàn gì về Tường thế?",
-      "Tường nghe thấy tên rồi đó nha!",
-      "Có ai cần Tường giúp gì không?",
-      "Ủa đang nói gì về Tường đó?",
-      "Tường ở đây, có gì hot?"
-    ];
-    await api.sendMessage(randomArr(responses), threadID);
-    return;
-  }
-
-  // ==== HANDLE "TƯỜNG" COMMAND ====
-  if (messageContainsTuong) {
-    let userMessage = body.toLowerCase().replace(/tường\s*[ơi]?\s*/i, "").trim() || "chào bạn";
-    if (userMessage === "resetdata") {
-      userData[threadID][senderID] = {
-        profile: {
-          name: user.profile.name,
-          pronouns: "bạn",
-          personality: "hài hước, ngáo, thân thiện",
-          emotionalState: "bình thường",
-          gender: user.profile.gender,
-          points: 0,
-          joinTime: Date.now(),
-          streak: 0
-        },
-        journal: [],
-        relationship: "bạn thân",
-        conversationStyle: "genz",
-        preferredLanguage: "Vietnamese",
-        lastInteraction: Date.now(),
-        lastMessageDay: today
-      };
-      fs.writeFileSync(userDataPath, JSON.stringify(userData, null, 2));
-      return api.sendMessage("Dữ liệu của bạn đã reset! Tường coi như bạn mới toanh nhé, lại làm bạn từ đầu 🤝", threadID, messageID);
-    }
-    if (userMessage.startsWith("training")) {
-      const command = userMessage.split(" ")[1];
-      if (command === "on") {
-        trainingSessions.set(threadID, true);
-        return api.sendMessage("Bật training! Mọi tin nhắn tiếp theo sẽ được lưu lại (trừ khi có từ 'Tường').", threadID, messageID);
-      } else if (command === "off") {
-        trainingSessions.delete(threadID);
-        return api.sendMessage("Đã tắt chế độ training.", threadID, messageID);
-      }
-    }
-    if (userMessage.startsWith("học câu này:")) {
-      const content = userMessage.substring("học câu này:".length).trim();
-      const trainingData = JSON.parse(fs.readFileSync(trainingDataPath));
-      trainingData.push({ message: content, senderID, threadID, timestamp: Date.now() });
-      fs.writeFileSync(trainingDataPath, JSON.stringify(trainingData, null, 2));
-      global.tuongData.training = trainingData;
-      return api.sendMessage("Cảm ơn bạn! Tường đã học được câu này rồi, lưu vào não luôn 😎", threadID, messageID);
-    }
-    // Tạo prompt hội thoại cực GenZ, vui vẻ, nối mạch, bonus meme
-    const recentJournal = user.journal.slice(-6).map(entry => `${entry.userMessage || entry.botPreviousMessage || ""}: ${entry.botResponse || ""}`).join("\n");
-    const systemPrompt = `Bạn là Tường AI, GenZ, vui nhộn, cực thân thiện, cực ngầu, biết meme, emoji, không ngại cà khịa. Hãy nói chuyện với ${user.profile.name} (mối quan hệ: ${user.relationship}, cảm xúc: ${user.profile.emotionalState}, streak: ${user.profile.streak}). Tin nhắn gần đây:\n${recentJournal}\nNgười dùng nói: "${userMessage}"\nTrả lời không quá 3 câu, không prefix, chèn emoji/meme nếu hợp, vibe GenZ.`;
-    try {
-      const geminiAPIKey = process.env.GEMINI_API_KEY || "AIzaSyDW0dxS6-Agy6468HfagcUhUKHjo4OSAl8";
-      const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiAPIKey}`,
-        { contents: [{ role: "user", parts: [{ text: systemPrompt }] }], generationConfig: { temperature: 0.89, topP: 0.99, maxOutputTokens: 1000 } }
-      );
-      let aiResponse = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || "Tường chưa hiểu ý bạn. Nói lại nha!").trim();
-      user.journal.push({ type: "conversation", userMessage, botResponse: aiResponse, timestamp: Date.now() });
-      user.lastInteraction = Date.now();
-      fs.writeFileSync(userDataPath, JSON.stringify(userData, null, 2));
-      return api.sendMessage(aiResponse, threadID, messageID);
-    } catch {
-      return api.sendMessage("Sorry, Tường đang lag nhẹ. Thử lại sau nha!", threadID, messageID);
     }
   }
 };
