@@ -2,7 +2,7 @@ module.exports.config = {
     name: "xoatien",
     version: "1.1.0",
     hasPermssion: 1,
-    credits: "manhIT (fix & improve: Kenne400k Copilot)",
+    credits: "pcoder",
     description: "Reset toàn bộ số tiền của thành viên nhóm về 0",
     commandCategory: "group",
     usages: "[cc], [del], [all]",
