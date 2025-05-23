@@ -4,7 +4,7 @@ module.exports.config = {
 	name: "zalgo",
 	version: "1.1.0",
 	hasPermssion: 0,
-	credits: "NTKhang (fix: Kenne400k Copilot)",
+	credits: "pcoder",
 	description: "Chuyển đổi văn bản thành chữ Zalgo siêu dị",
 	commandCategory: "game",
 	dependencies: { "to-zalgo": "" },
