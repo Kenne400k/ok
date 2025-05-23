@@ -6,7 +6,7 @@ module.exports.config = {
     name: "sendnoti",
     version: "3.1.0",
     hasPermssion: 2,
-    credits: "hphong (fix & improve: pcoder)",
+    credits: "pcoder",
     description: "Gửi tin nhắn + media từ admin tới toàn bộ nhóm, hỗ trợ phản hồi qua reply",
     commandCategory: "Tiện ích",
     usages: "[msg]",
