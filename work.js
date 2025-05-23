@@ -26,7 +26,7 @@ module.exports.config = {
   name: "workcanvas",
   version: "1.1.0",
   hasPermssion: 0,
-  credits: "Kenne400k, Phát, xịn hóa",
+  credits: "Pcoder",
   description: "Làm việc kiếm tiền, trả kết quả bằng ảnh canvas đẹp chuẩn game",
   commandCategory: "Kiếm Tiền",
   cooldowns: 5
